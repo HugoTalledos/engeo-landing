@@ -1,0 +1,95 @@
+<section id="clients">
+    <span class="dots-divider"/>
+    <h1>ALGUNOS DE NUESTROS CLIENTES</h1>
+    <div class="clients-gallery">
+        <picture>
+            <img src="https://engeo.com.co/wp-content/uploads/2021/11/an1.png" alt="">
+        </picture>
+        <picture>
+            <img src="https://engeo.com.co/wp-content/uploads/2021/11/LOGO-ANDINA-e1642554635731.jpg" alt="">
+        </picture>
+        <picture>
+            <img src="https://engeo.com.co/wp-content/uploads/2021/11/LOGO-DEINPRO.png" alt="">
+        </picture>
+        <picture>
+            <img src="https://engeo.com.co/wp-content/uploads/elementor/…65-q3wi69lklwu56susm97yn7evt87paio8xocqo6jti8.jpg" alt="">
+        </picture>
+        <picture>
+            <img src="https://engeo.com.co/wp-content/uploads/2021/11/LOGO-IGP.jpg" alt="">
+        </picture>
+        <picture>
+            <img src="https://engeo.com.co/wp-content/uploads/2021/11/LOGO-INCOTECH.jpg" alt="">
+        </picture>
+        <picture>
+            <img src="https://engeo.com.co/wp-content/uploads/2021/11/LOGO-INGEF.jpg" alt="">
+        </picture>
+        <picture>
+            <img src="https://engeo.com.co/wp-content/uploads/2021/11/LOGO-RAPITEST.jpg" alt="">
+        </picture>
+        <picture>
+            <img src="https://engeo.com.co/wp-content/uploads/2021/11/logo-jeps-e1642553653913.jpg" alt="">
+        </picture>
+        <picture>
+            <img src="https://engeo.com.co/wp-content/uploads/2021/11/LOGO-SIL.png" alt="">
+        </picture>
+        <picture>
+            <img src="https://engeo.com.co/wp-content/uploads/2021/11/Sin-titulo.png" alt="">
+        </picture>
+    </div>
+    <span class="dots-divider"/>
+</section>
+
+<style>
+    #clients {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 12em;
+    }
+
+    #clients .dots-divider {
+        border-top: 5px dotted black;
+        width: 68%;
+        margin: 5em 25px 50px;
+        border-radius: 5px;
+    }
+
+    #clients h1 {
+        color: #091B49;
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 12px;
+        text-shadow: 0px 0px 10px #908F95;
+        margin: 0;
+    }
+
+    .clients-gallery {
+        display: grid;
+        gap: 2.6rem;
+        grid-auto-flow: dense;
+        grid-auto-rows: 10rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        width: 100%;
+    }
+
+    .clients-gallery picture {
+        width: 250px;
+        height: 150px;
+        overflow: hidden;
+        padding: 1em;
+    }
+
+    .clients-gallery picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .clients-gallery picture:hover {
+        box-shadow: 10px 5px 10px #00000029;
+    }
+
+</style>

@@ -1,0 +1,128 @@
+<section id="services">
+    <h1>NUESTROS SERVICIOS</h1>
+    <div class="services-container">
+        <picture>
+            <img src="https://engeo.com.co/wp-content/uploads/2021/12/P_20190404_160904-225x300.jpg" />
+        </picture>
+        <p>
+            ENGEO S.A.S, ofrece una amplia gama de servicios con experiencia en ingeniería geotécnica,
+            ingeniería de rocas, ingeniería vial, ingenieria estructural, ingenieria hidraulica,
+            obras civiles,  exploración del subsuelo, aguas subterraneas, perforaciones y pozos profundos,
+            minería, topografía, geomatica, pruebas de campo y ensayos de laboratorio sobre suelos, rocas
+            y materiales de  construcción, para ayudar a los clientes a gestionar el riesgo subterráneo.
+        </p>
+        <picture>
+            <img src="https://engeo.com.co/wp-content/uploads/2021/12/P_20190404_160904-225x300.jpg" />
+        </picture>
+    </div>
+    <div class="services-price">
+        <ul>
+            <li><a href="/">Ingeniería Geotécnica</a></li>
+            <li><a href="/">Ingeniería de Rocas</a></li>
+            <li><a href="/">Geología</a></li>
+            <li><a href="/">Minería</a></li>
+            <li><a href="/">Topografía</a></li>
+            <li><a href="/">Laboratorios de Ingeniería</a></li>
+        </ul>
+        <div class="service-price-action">
+            <picture>
+                <img src="https://engeo.com.co/wp-content/uploads/2021/12/P_20190404_160904-225x300.jpg" />
+            </picture>
+            <button>COTIZAR</button>
+        </div>
+        <ul>
+            <li><a href="/">Aguas Subterráneas y Pozos Profundos</a></li>
+            <li><a href="/">Ingeniería Vial</a></li>
+            <li><a href="/">Ingeniería Hidráulica</a></li>
+            <li><a href="/">Ingeniería Estructural</a></li>
+            <li><a href="/">Geomática</a></li>
+            <li><a href="/">Obras Civiles</a></li>
+        </ul>
+    </div>
+    <div></div>
+</section>
+
+<style>
+    #services {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 12em;
+    }
+
+    #services h1 {
+        color: #091B49;
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 12px;
+        text-shadow: 0px 0px 10px #908F95;
+        margin-bottom: 1.5em;
+    }
+
+    .services-container, .services-price {
+        display: grid;
+        gap: 2.6rem;
+        grid-auto-flow: dense;
+        grid-auto-rows: 300px;
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .services-container p {
+        letter-spacing: -0.8px;
+        line-height: 1.7em;
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    .services-container picture, .service-price-action picture {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    .services-container picture img, .service-price-action picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .services-price ul, .services-price li {
+        list-style: none;
+        text-align: center;
+        padding: .7em;
+    }
+
+    .service-price-action {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-price-action button {
+        font-size: 14px;
+        font-weight: 600;
+        margin: auto;
+        text-transform: uppercase;
+        text-shadow: 0px 0px 10px rgba(27.391304347826054, 42.12901701323246, 196.87499999999997, 0.3);
+        fill: #D4CDCDFC;
+        color: #D4CDCDFC;
+        background-color: #091B49;
+        border-style: solid;
+        border-color: #091B49;
+        border-radius: 15px 15px 15px 15px;
+        box-shadow: 0px 0px 10px 0px rgba(5.250000000000009, 5.0559782608695745, 5.0559782608695745, 0.98);
+        padding: 15px 45px 15px 45px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black
+    }
+</style>

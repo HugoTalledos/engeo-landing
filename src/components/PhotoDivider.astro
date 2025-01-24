@@ -1,0 +1,95 @@
+<section id="photo-divider">
+    <div class="overlay" />
+    <div class="container-slider-images">
+        <img src="https://engeo.com.co/wp-content/uploads/2021/12/INGENIERIA-GEOTECNICA-4-scaled.jpg" />
+    </div>
+    <div class="principal-info">
+        <h1>EL DESCUBRIMIENTO TEMPRANO EVITA INCÓGNITAS COSTOSAS</h1>
+        <p>El análisis experto y los métodos de planificación utilizados
+            por los ingenieros especialistas de ENGEO INGENIERÍA Y GEOCIENCIAS,
+            al principio del proceso, ayudan a los clientes a administrar los costos
+            y evitar gastos excesivos debido a condiciones imprevistas en cada
+            proyecto de ingeniería.
+        </p>
+    </div>
+</section>
+<style>
+    #photo-divider {
+        position: relative;
+        width: 100%;
+        height: 296px;
+        padding: 1em 1.5em 2em;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    #photo-divider .container-slider-images {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    #photo-divider .container-slider-images img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        opacity: 0.45;
+        z-index: 2;
+
+    }
+
+    #photo-divider .principal-info {
+        position: absolute; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+    }
+
+    #photo-divider .principal-info h1 {
+        color: #FBFBFB;
+        font-size: 45px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 12px;
+        text-shadow: 0px 0px 10px #908F95;
+        margin-bottom: 0;
+    }
+
+    #photo-divider .principal-info p {
+        color: #FBFBFB;
+
+    }
+
+    .principal-info button {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-shadow: 0px 0px 10px rgba(27.391304347826054, 42.12901701323246, 196.87499999999997, 0.3);
+        fill: #D4CDCDFC;
+        color: #D4CDCDFC;
+        background-color: #091B49;
+        border-style: solid;
+        border-color: #091B49;
+        border-radius: 15px 15px 15px 15px;
+        box-shadow: 0px 0px 10px 0px rgba(5.250000000000009, 5.0559782608695745, 5.0559782608695745, 0.98);
+        padding: 15px 45px 15px 45px;
+    }
+</style>
