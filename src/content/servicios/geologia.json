@@ -20,16 +20,16 @@
             ],
             "content": [
                 {
-                    "content": "<p>CARACTERIZACIÓN GEOLÓGICA DE MACIZOS ROCOSOS</p>"
+                    "title": "CARACTERIZACIÓN GEOLÓGICA DE MACIZOS ROCOSOS"
                 },
                 {
-                    "content": "<p>CARTOGRAFÍA GEOLÓGICA</p>"
+                    "title": "CARTOGRAFÍA GEOLÓGICA"
                 },
                 {
-                    "content": "<p>MODELOS GEOLÓGICOS</p>"
+                    "title": "MODELOS GEOLÓGICOS"
                 },
                 {
-                    "content": "<p>MAPAS GEOLÓGICOS</p>"
+                    "title": "MAPAS GEOLÓGICOS"
                 }
             ]
         },
@@ -43,13 +43,13 @@
             ],
            "content": [
                 {
-                    "content": "<p>GEOMORFOLOGÍA APLICADA</p>"
+                    "title": "GEOMORFOLOGÍA APLICADA"
                 },
                 {
-                    "content": "<p>ANÁLISIS GEOLÓGICO-ESTRUCTURAL</p>"
+                    "title": "ANÁLISIS GEOLÓGICO-ESTRUCTURAL"
                 },
                 {
-                    "content": "<p>PETROLOGÍA</p>"
+                    "title": "PETROLOGÍA"
                 }
             ]
         }

@@ -14,19 +14,19 @@
               ],
             "content": [
                 {
-                    "content": "<p>LEVANTAMIENTO DE VÍAS Y TÚNELES.</p>"
+                    "title": "LEVANTAMIENTO DE VÍAS Y TÚNELES."
                 },
                 {
-                    "content": "<p>DISEÑO DE VIAS.</p>"
+                    "title": "DISEÑO DE VIAS."
                 },
                 {
-                    "content": "<p>REPLANTEAMIENTO DE OBRAS CIVILES.</p>"
+                    "title": "REPLANTEAMIENTO DE OBRAS CIVILES."
                 },
                 {
-                    "content": "<p>LEVANTAMIENTO OBRAS CIVILES.</p>"
+                    "title": "LEVANTAMIENTO OBRAS CIVILES."
                 },
                 {
-                    "content": "<p>LEVANTAMIENTO DE TALUDES.</p>"
+                    "title": "LEVANTAMIENTO DE TALUDES."
                 }
             ]
         },
@@ -38,22 +38,22 @@
               ],
            "content": [
                 {
-                    "content": "<p>LEVANTAMIENTO TOPOGRÁFICO SUPERFICIAL.</p>"
+                    "title": "LEVANTAMIENTO TOPOGRÁFICO SUPERFICIAL."
                 },
                 {
-                    "content": "<p>LEVANTAMIENTO DE PIT.</p>"
+                    "title": "LEVANTAMIENTO DE PIT."
                 },
                 {
-                    "content": "<p>LEVANTAMIENTO DE PATIOS DE ACOPIO.</p>"
+                    "title": "LEVANTAMIENTO DE PATIOS DE ACOPIO."
                 },
                 {
-                    "content": "<p>MEDICIÓN DE PILAS DE MINERAL.</p>"
+                    "title": "MEDICIÓN DE PILAS DE MINERAL."
                 },
                 {
-                    "content": "<p>LEVANTAMIENTO DE MINAS SUBTERRÁNEAS.</p>"
+                    "title": "LEVANTAMIENTO DE MINAS SUBTERRÁNEAS."
                 },
                 {
-                    "content": "<p>DESARROLLO DE DIRECCIONAMIENTO EN TUNELES Y GALERÍAS.</p>"
+                    "title": "DESARROLLO DE DIRECCIONAMIENTO EN TUNELES Y GALERÍAS."
                 }
             ]
         }

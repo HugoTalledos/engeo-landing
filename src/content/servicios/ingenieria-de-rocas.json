@@ -53,40 +53,40 @@
               ],
            "content": [
                 {
-                    "content": "<p>Caracterización y clasificación de macizo rocoso.</p>"
+                    "title": "Caracterización y clasificación de macizo rocoso."
                 },
                 {
-                    "content": "<p>Análisis cinemático de cuñas y bloques</p>"
+                    "title": "Análisis cinemático de cuñas y bloques"
                 },
                 {
-                    "content": "<p>Análisis de estabilidad en labores mineras (cielo abierto y subterráneas).</p>"
+                    "title": "Análisis de estabilidad en labores mineras (cielo abierto y subterráneas)."
                 },
                 {
-                    "content": "<p>Muestreo y caracterización de materiales.</p>"
+                    "title": "Muestreo y caracterización de materiales."
                 },
                 {
-                    "content": "<p>Análisis para fuentes de materiales.</p>"
+                    "title": "Análisis para fuentes de materiales."
                 },
                 {
-                    "content": "<p>Diseño, evaluación y optimización de sostenimientos y fortalezas.</p>"
+                    "title": "Diseño, evaluación y optimización de sostenimientos y fortalezas."
                 },
                 {
-                    "content": "<p>Diseño y evaluación de taludes temporales y permanentes.</p>"
+                    "title": "Diseño y evaluación de taludes temporales y permanentes."
                 },
                 {
-                    "content": "<p>Diseño y evaluación de zonas para acopio de materiales-ZODME.</p>"
+                    "title": "Diseño y evaluación de zonas para acopio de materiales-ZODME."
                 },
                 {
-                    "content": "<p>Diseño, evaluación y optimización de drenaje y subdrenaje en labores mineras.</p>"
+                    "title": "Diseño, evaluación y optimización de drenaje y subdrenaje en labores mineras."
                 },
                 {
-                    "content": "<p>Topografía en superficie y subterránea para labores mineras.</p>"
+                    "title": "Topografía en superficie y subterránea para labores mineras."
                 },
                 {
-                    "content": "<p>Proyección de labores mineras.</p>"
+                    "title": "Proyección de labores mineras."
                 },
                 {
-                    "content": "<p>Cálculo de volúmenes.</p>"
+                    "title": "Cálculo de volúmenes."
                 }
             ]
         }
