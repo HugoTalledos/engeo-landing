@@ -13,9 +13,237 @@ export async function getStaticPaths () {
 
 const { service } = Astro.props;
 const { data } = service;
-const { title } = data;
 ---
 
-<Layout title={title}>
-    <h1>{ title }</h1>
+<Layout title={data.title}>
+    <div class="container-slider">
+        <div class="overlay" />
+        <div class="container-slider-images">
+            { data.header.length > 0 && <img src={data.header[0]} />}
+            { data.video && <video autoplay muted loop><source src={data.video} type="video/mp4" /> </video> }
+        </div>
+        <div class="principal-info">
+            <h1>{ data.title }</h1>
+            <p>{ data.description }</p>
+        </div>
+    </div>
+    {
+        data.additionalData.slogan
+        && (
+            <div class="section-addtional">
+                <h2>
+                    "{ data.additionalData.slogan }"
+                </h2>
+                <picture>
+                    <img src={data.additionalData.image} />
+                </picture>
+            </div>
+        )
+    }
+    {
+        data.sections.map((section, idx) => (
+            <div class="section">
+                <h1 class={`section-title ${idx % 2 == 0 ? '': 'impar'}`}>{section.title}</h1>
+                <div class={`section-info ${idx % 2 == 0 ? '': 'impar'}`}>
+                    {
+                        section.images.length > 0
+                        && (<picture>
+                            <img src={section.images[0]} />
+                        </picture>)
+                    }
+                    {
+                        section.video
+                        && (<video autoplay muted loop><source src={section.video} type="video/mp4" /> </video> )
+                    }
+                    <ul class="section-list">
+                        {
+                            section.content.map((fragment) =>
+                            (<li>{ fragment.title }</li>))
+                        }
+                    </ul>
+                </div>
+            </div>
+        ))
+    }
+    <div class="call-to-action">
+        <a>Realiza tu cotización</a>
+    </div>
 </Layout>
+
+<style>
+    .container-slider {
+        position: relative;
+        width: 100%;
+        height: 490px;
+        overflow: hidden;
+    }
+    
+    .container-slider .container-slider-images {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    
+    .container-slider .container-slider-images img, .container-slider .container-slider-images video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #06112F;
+        opacity: 0.45;
+        z-index: 2;
+        
+    }
+    
+    .container-slider .principal-info {
+        box-sizing: border-box;
+        position: absolute; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        padding: 0 10em;
+    }
+
+    .container-slider .principal-info h1 {
+        color: #FFFFFF;
+        font-size: 3rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 12px;
+        text-shadow: 0px 0px 10px #908F95;
+    }
+
+    .container-slider .principal-info p {
+        text-align: justify;
+        color: #FFFCFC;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 2em;
+        text-shadow: 0px 0px 10px #908F95;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        padding: 1em 12em;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .section-addtional {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 1em 12em;
+        gap: 30px;
+        box-sizing: border-box;
+    }
+    
+    .section-addtional h2{
+        width: 50%;
+        font-size: 35px;
+        text-align: center;
+        line-height: 1.2;
+        color: #091B49;
+    }
+    .section-addtional picture {
+        width: 50%;
+        height: 200px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .section-addtional picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .section ul, .section li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .section-title {
+        color: #091B49;
+        font-size: 45px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 12px;
+        text-shadow: 0px 0px 10px #908F95;
+        text-align: end;
+    }
+
+    .section-info {
+        display: flex;
+        gap: 30px;
+        justify-content: flex-start;
+    }
+
+    .section-info picture, .section-info video {
+        width: 50%;
+        height: auto;
+        aspect-ratio: 16/9;
+        overflow: hidden;
+    }
+
+    .section-info picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+
+    .section-list {
+        width: 50%;
+    }
+    .section-list li {
+        font-size: 15px;
+        box-shadow: 0px 0px 30px 0px #6f81af;
+        margin-bottom: 14px;
+        padding: 20px;
+        text-transform: capitalize;
+    }
+
+    .call-to-action {
+        display: flex;
+        width: 100%;
+        padding: 3em 0;
+    }
+
+    .call-to-action a {
+        background-color: #091B49;
+        color: white;
+        padding: 1em 2em;
+        border: none;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+    }
+
+    .section-title.impar {
+        text-align: start;
+    }
+    div.impar {
+        flex-direction: row-reverse;
+    }
+</style>
