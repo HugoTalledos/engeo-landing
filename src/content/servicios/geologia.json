@@ -1,0 +1,57 @@
+{
+    "slug": "geologia",
+    "title": "Geología",
+    "description": "",
+    "header": [
+        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/geologia%2Fheader%2FANALISIS-ESTRUCTURAL.jpg?generation=1737826884806578&alt=media",
+        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/geologia%2Fheader%2FANALISIS-GEOLOGICO-3.jpg?generation=1737826884743286&alt=media",
+        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/geologia%2Fheader%2FANALISIS-GEOMORFOLOGICO.jpg?generation=1737826885073594&alt=media"
+    ],
+    "additionalData": {},
+    "sections": [
+        {
+            "title": "Servicios",
+            "images": [
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/geologia%2Fslider1%2Fimage_1.jpg?generation=1737823866457391&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/geologia%2Fslider1%2Fimage_2.jpg?generation=1737823866687616&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/geologia%2Fslider1%2Fimage_3.jpg?generation=1737823866852573&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/geologia%2Fslider1%2Fimage_4.jpg?generation=1737823867678909&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/geologia%2Fslider1%2Fimage_5.jpg?generation=1737823867846599&alt=media"
+            ],
+            "content": [
+                {
+                    "content": "<p>CARACTERIZACIÓN GEOLÓGICA DE MACIZOS ROCOSOS</p>"
+                },
+                {
+                    "content": "<p>CARTOGRAFÍA GEOLÓGICA</p>"
+                },
+                {
+                    "content": "<p>MODELOS GEOLÓGICOS</p>"
+                },
+                {
+                    "content": "<p>MAPAS GEOLÓGICOS</p>"
+                }
+            ]
+        },
+        {
+            "images": [
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/geologia%2Fslider2%2Fimage_10.jpg?generation=1737823895046928&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/geologia%2Fslider2%2Fimage_6.jpg?generation=1737823893623514&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/geologia%2Fslider2%2Fimage_7.jpg?generation=1737823893685761&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/geologia%2Fslider2%2Fimage_8.jpg?generation=1737823893920397&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/geologia%2Fslider2%2Fimage_9.jpg?generation=1737823895173972&alt=media"
+            ],
+           "content": [
+                {
+                    "content": "<p>GEOMORFOLOGÍA APLICADA</p>"
+                },
+                {
+                    "content": "<p>ANÁLISIS GEOLÓGICO-ESTRUCTURAL</p>"
+                },
+                {
+                    "content": "<p>PETROLOGÍA</p>"
+                }
+            ]
+        }
+    ]
+}

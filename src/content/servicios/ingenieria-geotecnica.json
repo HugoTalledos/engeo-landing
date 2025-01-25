@@ -1,0 +1,85 @@
+{
+    "slug": "ingenieria-geotecnica",
+    "title": "Ingeniería Geotécnica",
+    "description": "La evaluación exhaustiva de las condiciones del subsuelo y la aplicación de principios sólidos de conocimiento y experiencia en ingeniería geotécnica brindan a los clientes soluciones prácticas y rentables.",
+    "header": [
+        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fheader%2Fheader-1.jpg?generation=1737822104564070&alt=media",
+        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fheader%2Fheader-2.jpg?generation=1737822104574242&alt=media",
+        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fheader%2Fheader-3.jpg?generation=1737822104511155&alt=media"
+      ],
+    "additionalData": {},
+    "sections": [
+        {
+            "title": "Servicios",
+            "images": [
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider1%2F.DS_Store?generation=1737822106997661&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider1%2Fslider-1.jpg?generation=1737822105967162&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider1%2Fslider-10.jpg?generation=1737822110703809&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider1%2Fslider-11.jpg?generation=1737822112219423&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider1%2Fslider-12.jpg?generation=1737822110137794&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider1%2Fslider-13.jpg?generation=1737822109112573&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider1%2Fslider-14.jpg?generation=1737822112791867&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider1%2Fslider-15.jpg?generation=1737822112317287&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider1%2Fslider-2.jpg?generation=1737822105817543&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider1%2Fslider-3.jpg?generation=1737822105988672&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider1%2Fslider-4.jpg?generation=1737822107677467&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider1%2Fslider-5.jpg?generation=1737822107476436&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider1%2Fslider-6.jpg?generation=1737822108850133&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider1%2Fslider-7.jpg?generation=1737822109006167&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider1%2Fslider-8.jpg?generation=1737822111763716&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider1%2Fslider-9.jpg?generation=1737822110423340&alt=media"
+              ],
+            "content": [
+                {
+                    "title": "Exploración del subsuelo",
+                    "content": "<ul><li>&nbsp;Perforaciones con equipo manual-percusión y lavado.</li><li>Perforaciones con equipo mecánico-rotación-percusión.</li><li>Perforaciones en roca: horizontales, direccionadas y verticales, con o sin recuperación de núcleos.</li><li>Muestreo sistemático de materiales-suelos y rocas.</li><li>Pruebas y ensayos in situ: (SPT-Standard Penetration Test, CPT-Cone Pentration test, VST-Vane Shear Test, BT, SP-screw PLate, Permeabilidad).</li><li>Geofísica: SEV-Sondeo Eléctrico vertical, LRS Líneas de refracción sísmica, Tomografía.</li></ul>"
+                },
+                {
+                    "title": "Instrumentación geotécnica",
+                    "content": "<p>Cuando las condiciones y la complejidad del terreno y/o del proyecto lo requieren, se incluye la instalación de instrumentos de medición para hacer un seguimiento a la evolución de deformaciones o desplazamientos, esfuerzos y/o presiones durante un cierto periodo de tiempo, que permita complementar la información obtenida y mejorar el modelo de análisis.</p><ul><li>Piezómetros</li><li>Inclinómetros</li><li>Celdas</li></ul>"
+                },
+                {
+                    "title": "Cimentaciones, micropilotes y anclajes",
+                    "content": "<ul><li>Diseño, análisis y construcción</li><li>Supervisión técnica y asesoría durante construcción</li><li>Control de calidad</li></ul>"
+                }
+            ]
+        },
+        {
+            "images": [
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider2%2F.DS_Store?generation=1737822114504313&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider2%2Fslider-1.jpg?generation=1737822113971623&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider2%2Fslider-10.jpeg?generation=1737822116203166&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider2%2Fslider-11.jpg?generation=1737822117253371&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider2%2Fslider-12.jpg?generation=1737822116387711&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider2%2Fslider-2.jpg?generation=1737822114396225&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider2%2Fslider-3.jpg?generation=1737822113633421&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider2%2Fslider-4.jpg?generation=1737822115323915&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider2%2Fslider-5.jpg?generation=1737822114824599&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider2%2Fslider-6.jpg?generation=1737822115281541&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider2%2Fslider-7.jpg?generation=1737822115807105&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider2%2Fslider-8.jpg?generation=1737822117133537&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider2%2Fslider-9.jpg?generation=1737822116886615&alt=media"
+              ],
+           "content": [
+                {
+                    "content": "<p>Estudios geotécnicos de suelos y fundaciones para edificaciones, construcciones y en general todo tipo de infraestructura: (vial, industrial, eléctrica, ambiental, oil & gas).</p>"
+                },
+                {
+                    "content": "<p>Diseño, análisis y optimización de cimentaciones superficiales y profundas.</p>"
+                },
+                {
+                    "content": "<p>Estabilidad de taludes y laderas.</p>"
+                },
+                {
+                    "content": "<p>Diseño ZODME.</p>"
+                },
+                {
+                    "content": "<p>Geotecnia vial.</p>"
+                },
+                {
+                    "content": "<p>Consultoría geotécnica especializada.</p>"
+                }
+            ]
+        }
+    ]
+}

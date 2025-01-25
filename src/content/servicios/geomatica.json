@@ -1,0 +1,64 @@
+{
+    "slug": "geomatica",
+    "title": "Geomática",
+    "description": "",
+    "header": [],
+    "video": "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/geomatica%2FModelos-hidrologicos-conceptual.mp4?generation=1737825545265023&alt=media",
+    "additionalData": {},
+    "sections": [
+        {
+            "title": "Servicios",
+            "images": [
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/geomatica%2Fslider%2Fimage_1.jpg?generation=1737823946243361&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/geomatica%2Fslider%2Fimage_2.jpg?generation=1737823946252760&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/geomatica%2Fslider%2Fimage_3.jpg?generation=1737823946548232&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/geomatica%2Fslider%2Fimage_4.jpg?generation=1737823947143378&alt=media"
+            ],
+            "video": "",
+            "content": [
+                {
+                    "title": "ANÁLISIS MULTITEMPORAL"
+                },
+                {
+                    "title": "ELABORACIÓN DE CARTOGRÁFIA TEMÁTICA"
+                },
+                {
+                    "title": "MODELOS HIDROGEOLÓGICOS CONCEPTUALES"
+                },
+                {
+                    "title": "MODELOS HIDROLÓGICOS"
+                },
+                {
+                    "title": "MODELACIÓN DE YACIMIENTOS"
+                },
+                {
+                    "title": "NUBE DE PUNTOS"
+                }
+            ]
+        },
+        {
+            "images": [],
+            "video": "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/geomatica%2Fheader%2FModelos-hidrologicos.mp4?generation=1737827180970896&alt=media",
+            "content": [
+                {
+                    "title": "ANÁLISIS DE COBERTURA VEGETAL"
+                },
+                {
+                    "title": "CÁLCULO DE VOLÚMENES"
+                },
+                {
+                    "title": "TRATAMIENTO DE IMÁGENES"
+                },
+                {
+                    "title": "TRANFORMACIONES ESPACIALES"
+                },
+                {
+                    "title": "ZONIFICACIONES AMBIENTALES"
+                },
+                {
+                    "title": "ZONIFICACIONES DE AMENAZAS Y RIESGOS"
+                }
+            ]
+        }
+    ]
+}

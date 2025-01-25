@@ -1,0 +1,61 @@
+{
+    "slug": "topografia",
+    "title": "Topografía",
+    "description": "Realizamos planos topográficos a partir de levantamientos por medios convencionales como la estación total y los combinamos con métodos topográficos por adquisición de datos a partir de drones. Con la unión de estos dos métodos logramos obtener datos más densos de mayor calidad con los cuales realizamos planos para uso ingenieril, Civil, Minero, Geológico, Ambiental, entre otros.",
+    "header": [],
+    "video": "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/topografia%2Fheader%2Fdron.mp4?generation=1737827073057010&alt=media",
+    "additionalData": {},
+    "sections": [
+        {
+            "title": "Ingeniería Civil",
+            "images": [
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/topografia%2Fslider1%2Fimage_1.jpg?generation=1737825012311726&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/topografia%2Fslider1%2Fimage_2.jpg?generation=1737825012263944&alt=media"
+              ],
+            "content": [
+                {
+                    "content": "<p>LEVANTAMIENTO DE VÍAS Y TÚNELES.</p>"
+                },
+                {
+                    "content": "<p>DISEÑO DE VIAS.</p>"
+                },
+                {
+                    "content": "<p>REPLANTEAMIENTO DE OBRAS CIVILES.</p>"
+                },
+                {
+                    "content": "<p>LEVANTAMIENTO OBRAS CIVILES.</p>"
+                },
+                {
+                    "content": "<p>LEVANTAMIENTO DE TALUDES.</p>"
+                }
+            ]
+        },
+        {
+            "title": "Minería",
+            "images":  [
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/topografia%2Fslider2%2Fimage_3.jpg?generation=1737825019077383&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/topografia%2Fslider2%2Fimage_4.jpg?generation=1737825019070571&alt=media"
+              ],
+           "content": [
+                {
+                    "content": "<p>LEVANTAMIENTO TOPOGRÁFICO SUPERFICIAL.</p>"
+                },
+                {
+                    "content": "<p>LEVANTAMIENTO DE PIT.</p>"
+                },
+                {
+                    "content": "<p>LEVANTAMIENTO DE PATIOS DE ACOPIO.</p>"
+                },
+                {
+                    "content": "<p>MEDICIÓN DE PILAS DE MINERAL.</p>"
+                },
+                {
+                    "content": "<p>LEVANTAMIENTO DE MINAS SUBTERRÁNEAS.</p>"
+                },
+                {
+                    "content": "<p>DESARROLLO DE DIRECCIONAMIENTO EN TUNELES Y GALERÍAS.</p>"
+                }
+            ]
+        }
+    ]
+}

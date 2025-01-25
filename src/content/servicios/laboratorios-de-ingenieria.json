@@ -1,0 +1,92 @@
+{
+    "slug": "laboratorios-de-ingenieria",
+    "title": "Laboratorios de Ingeniería",
+    "description": "",
+    "header": [
+        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fheader%2FCONSOLIDACION-INIDIMENSIONAL.jpg?generation=1737827046757289&alt=media",
+        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fheader%2FPOTENCIAL-DE-EXPANSION.jpg?generation=1737827046775742&alt=media",
+        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fheader%2FPRESION-DE-EXPANSION.jpg?generation=1737827047054852&alt=media"
+      ],
+    "video": "",
+    "additionalData": {
+        "slogan": "Nuestros equipos se encuentran certificados por ONAC.",
+        "image": "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fimage_1.jpeg?generation=1737824901630474&alt=media"
+    },
+    "sections": [
+        {
+            "title": "Servicios",
+            "images": [
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider1%2Fimage_2.jpg?generation=1737824892031781&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider1%2Fimage_3.jpg?generation=1737824892817464&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider1%2Fimage_4.jpg?generation=1737824892444265&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider1%2Fimage_5.jpg?generation=1737824892894982&alt=media"
+              ],
+            "content": [
+                {
+                    "content": "<p>LÍMITES DE CONSISTENCIA (ATTERBERG).</p>"
+                },
+                {
+                    "content": "<p>PESO ESPECÍFICO DE SÓLIDOS.</p>"
+                },
+                {
+                    "content": "<p>PESO UNITARIO.</p>"
+                },
+                {
+                    "content": "<p>HUMEDAD NATURAL.</p>"
+                },
+                {
+                    "content": "<p>GRANULOMETRÍA (LAVADO Y TAMIZADO).</p>"
+                }
+            ]
+        },
+        {
+            "images": [
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider2%2Fimage_10.jpg?generation=1737824880206863&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider2%2Fimage_6.jpg?generation=1737824879424298&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider2%2Fimage_7.jpg?generation=1737824879536963&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider2%2Fimage_8.jpg?generation=1737824879144021&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider2%2Fimage_9.jpg?generation=1737824880180813&alt=media"
+              ],
+           "content": [
+                {
+                    "content": "<p>POTENCIAL DE EXPANSIÓN.</p>"
+                },
+                {
+                    "content": "<p>EXPANSIÓN LIBRE Y CONTROLADA.</p>"
+                },
+                {
+                    "content": "<p>CONSOLIDACIÓN UNIDIMENSIONAL.</p>"
+                },
+                {
+                    "content": "<p>CORTE DIRECTO.</p>"
+                },
+                {
+                    "content": "<p>EXTRACCIÓN DE NÚCLEOS DE ROCAS, CONCRETOS Y MORTEROS.</p>"
+                }
+            ]
+        },
+        {
+            "images": ["images", "1", "2"],
+           "content": [
+                {
+                    "content": "<p>COMPRESIÓN UNIAXIAL EN ROCAS.</p>"
+                },
+                {
+                    "content": "<p>ÍNDICE DE CARGA PUNTUAL EN ROCAS.</p>"
+                },
+                {
+                    "content": "<p>TRACCIÓN INDIRECTA EN ROCAS.</p>"
+                },
+                {
+                    "content": "<p>PESO UNITARIO EN ROCAS.</p>"
+                },
+                {
+                    "content": "<p>GRADACIÓN.</p>"
+                },
+                {
+                    "content": "<p>CORTE Y REFRENTADO DE CARAS SOBRE ESPECÍMENES (ROCAS, CONCRETOS Y MORTEROS).</p>"
+                }
+            ]
+        }
+    ]
+}

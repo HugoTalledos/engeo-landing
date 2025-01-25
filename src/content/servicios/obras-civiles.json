@@ -1,0 +1,63 @@
+{
+    "slug": "obras-civiles",
+    "title": "Obras Civiles",
+    "description": "",
+    "header": [
+        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/obras-civiles%2Fheader%2FEXCAVACIONES-scaled.jpg?generation=1737827204185252&alt=media",
+        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/obras-civiles%2Fheader%2FMICROPILOTES-scaled.jpg?generation=1737827204747466&alt=media",
+        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/obras-civiles%2Fheader%2FOBRAS-CIVILES-1.jpg?generation=1737827204097100&alt=media"
+      ],
+    "additionalData": {},
+    "sections": [
+        {
+            "title": "Servicios",
+            "images": [
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/obras-civiles%2Fslider1%2Fimage_1.jpg?generation=1737824951277380&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/obras-civiles%2Fslider1%2Fimage_2.jpg?generation=1737824950944235&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/obras-civiles%2Fslider1%2Fimage_3.jpg?generation=1737824951229823&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/obras-civiles%2Fslider1%2Fimage_4.jpg?generation=1737824951632317&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/obras-civiles%2Fslider1%2Fimage_5.jpg?generation=1737824952108802&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/obras-civiles%2Fslider1%2Fimage_6.jpg?generation=1737824951843741&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/obras-civiles%2Fslider1%2Fimage_7.jpg?generation=1737824952630613&alt=media"
+              ],
+            "content": [
+                {
+                    "title": "Asesoría para obras civiles durante la proyección, aprobación y construcción."
+                },
+                {
+                    "title": "Control de calidad en materiales (suelos, rocas, concretos, agregados)."
+                }
+            ]
+        },
+        {
+            "title": "Diseño y construcción de obras civiles",
+            "images": [
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/obras-civiles%2Fslider2%2Fimage_10.jpg?generation=1737824961730957&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/obras-civiles%2Fslider2%2Fimage_11.jpg?generation=1737824962450335&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/obras-civiles%2Fslider2%2Fimage_12.jpg?generation=1737824962572080&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/obras-civiles%2Fslider2%2Fimage_13.jpg?generation=1737824962543493&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/obras-civiles%2Fslider2%2Fimage_14.jpg?generation=1737824963161188&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/obras-civiles%2Fslider2%2Fimage_8.jpg?generation=1737824961592537&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/obras-civiles%2Fslider2%2Fimage_9.jpg?generation=1737824961718800&alt=media"
+              ],
+           "content": [
+                {
+                    "title": "Excavaciones",
+                    "content": "<p>Sostenimiento, apuntalamiento, drenaje, protección, transporte y disposición de materiales.</p>"
+                },
+                {
+                    "title": "Muros de contención",
+                    "content": "<p>Supervisión en obra, construcción, revisión de diseños.</p>"
+                },
+                {
+                    "title": "Taludes",
+                    "content": "<p>Diseño y construcción, estabilización, protección, drenaje, recomendaciones.</p>"
+                },
+                {
+                    "title": "Edificaciones",
+                    "content": "<p>– Construcción, figurado y armado de acero.</p> <p>– Suministro y fabricación de concreto.</p><p>-Supervisión y construcción de mampostería.</p><p>– Suministro de materiales para construcción.</p><p>– Suministro y armado de formaleta.</p><p>– Construcción de redes hidrosanitarias.</p>"
+                }
+            ]
+        }
+    ]
+}

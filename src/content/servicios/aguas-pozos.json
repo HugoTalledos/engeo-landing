@@ -1,0 +1,57 @@
+{
+    "slug": "aguas-pozos",
+    "title": "Aguas subterráneas y pozos profundos",
+    "description": "EL AGUA SUBTERRÁNEA ES UNA ALTERNATIVA PARA EL SUMINISTRO DE AGUA, POR LO QUE SOMOS CONSIENTES DE SU IMPORTANCIA Y CUIDADO",
+    "header": [
+        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/agua-pozos%2Fheader%2F20141219_161434-1.jpg?generation=1737826862960410&alt=media",
+        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/agua-pozos%2Fheader%2FIMG-20180413-WA0038-1.jpg?generation=1737826862342492&alt=media",
+        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/agua-pozos%2Fheader%2FPOZO-CHIQUINQUIRA-2016-1.jpg?generation=1737826862771111&alt=media"
+      ],
+    "additionalData": {},
+    "sections": [
+        {
+            "title": "Servicios",
+            "images": [],
+            "video": "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/agua-pozos%2FMi-video-1.mp4?generation=1737825427079778&alt=media",
+            "content": [
+                {
+                    "title": "REGISTRO GEOFÍSICO DE POZOS",
+                    "content": "<p>Registro geofísico de pozos.</p>"
+                },
+                {
+                    "title": "DISEÑO Y PERFORACIÓN DE POZOS PROFUNDOS",
+                    "content": "<p>Evaluamos las condiciones geológicas, ambientales y las especificaciones del cliente con el fin de obtener la solución que mejor se adapte a sus necesidades. </p>"
+                },
+                {
+                    "title": "MANTENIMIENTO Y RECUPERACIÓN DE POZOS PROFUNDOS",
+                    "content": "<p>Cuidamos de sus pozos profundos por medio de un mantenimiento físico y químico que prolongue la vida útil de su pozo.</p>"
+                }
+            ]
+        },
+        {
+            "title": "",
+            "images": [
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/agua-pozos%2Fslider1%2Fimage_1.jpg?generation=1737823797605645&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/agua-pozos%2Fslider1%2Fimage_2.jpg?generation=1737823797642901&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/agua-pozos%2Fslider1%2Fimage_3.jpg?generation=1737823797963291&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/agua-pozos%2Fslider1%2Fimage_4.jpg?generation=1737823798903635&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/agua-pozos%2Fslider1%2Fimage_5.jpg?generation=1737823798919767&alt=media"
+            ],
+            "video": "",
+            "content": [
+                {
+                    "title": "TOMAS DE VÍDEOS DE POZOS PROFUNDOS",
+                    "content": "<p>Tomas de vídeos de pozos profundos.</p>"
+                },
+                {
+                    "title": "ESTUDIOS HIDROGEOLÓGICOS",
+                    "content": "<p>Buscamos y evaluamos la mejor opción para el abastecimiento de agua por medio de estudios que permiten conocer las características del subsuelo.</p>"
+                },
+                {
+                    "title": "PRUEBAS DE BOMBEO",
+                    "content": "<p>Pruebas de bombeo.</p>"
+                }
+            ]
+        }
+    ]
+}

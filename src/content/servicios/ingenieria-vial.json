@@ -1,0 +1,45 @@
+{
+    "slug": "ingenieria-vial",
+    "title": "Ingeniería vial",
+    "description": "",
+    "header": [
+        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-vial%2Fheader%2FCaptura2_diseno-senalizacion-vial.jpg?generation=1737827020509981&alt=media",
+        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-vial%2Fheader%2FSAM_3116-scaled.jpg?generation=1737827020759648&alt=media"
+      ],
+    "additionalData": {},
+    "sections": [
+        {
+            "title": "Servicios",
+            "images": [
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-vial%2Fslider1%2Fimage_1.jpg?generation=1737824628897326&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-vial%2Fslider1%2Fimage_2.jpg?generation=1737824628901516&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-vial%2Fslider1%2Fimage_3.png?generation=1737824628052562&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-vial%2Fslider1%2Fimage_4.png?generation=1737824628886922&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-vial%2Fslider1%2Fimage_5.jpg?generation=1737824629971913&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-vial%2Fslider1%2Fimage_6.jpg?generation=1737824630537814&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-vial%2Fslider1%2Fimage_7.jpg?generation=1737824630189229&alt=media"
+              ],
+            "video": "",
+            "content": [
+                {
+                    "title": "DISEÑO DE PAVIMENTOS PARA INFRAESTRUCTURA VIAL Y AEROPORTUARIA"
+                },
+                {
+                    "title": "DISEÑO GEOMÉTRICO DE VÍAS Y AEROPISTAS"
+                },
+                {
+                    "title": "ESTUDIOS DE TRANSITO"
+                },
+                {
+                    "title": "DISEÑO DE SEÑALIZACIÓN VIAL"
+                },
+                {
+                    "title": "AUDITORIAS DE SEGURIDAD VIAL"
+                },
+                {
+                    "title": "MICRO Y MACRO MODELACIÓN DE TRÁNSITO Y TRANSPORTE"
+                }
+            ]
+        }
+    ]
+}

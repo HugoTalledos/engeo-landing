@@ -1,0 +1,39 @@
+{
+    "slug": "ingenieria-estructural",
+    "title": "Ingeniería Estructural",
+    "description": "",
+    "header": [
+        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-estructural%2Fheader%2FEXCAVACIONES-scaled.jpg?generation=1737826950214579&alt=media"
+      ],
+    "additionalData": {},
+    "sections": [
+        {
+            "title": "Servicios",
+            "images": [
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-estructural%2Fheader%2FEXCAVACIONES-scaled.jpg?generation=1737826950214579&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-estructural%2Fheader%2FIngenieria_Estructural-6-scaled.jpg?generation=1737826950283434&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-estructural%2Fheader%2FMICROPILOTES-scaled.jpg?generation=1737826950555269&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-estructural%2Fheader%2FModelos-hidrologicos.mp4?generation=1737826951998893&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-estructural%2Fheader%2FOBRAS-CIVILES-1.jpg?generation=1737826951477103&alt=media"
+              ],
+            "video": "",
+            "content": [
+                {
+                    "title": "ASESORÍA TÉCNICA"
+                },
+                {
+                    "title": "DISEÑO Y ANÁLISIS DE ESTRUCTURAS"
+                },
+                {
+                    "title": "PATOLOGÍA ESTRUCTURAL"
+                },
+                {
+                    "title": "REVISIÓN, OPTIMIZACIÓN DE DISEÑOS Y ESTRUCTURAS"
+                },
+                {
+                    "title": "SUPERVISIÓN TÉCNICA"
+                }
+            ]
+        }
+    ]
+}
