@@ -66,7 +66,16 @@
             ]
         },
         {
-            "images": ["images", "1", "2"],
+            "images": [
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider3%2Fimage_11.jpg?generation=1737824755247651&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider3%2Fimage_12.jpg?generation=1737824754889619&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider3%2Fimage_13.jpg?generation=1737824754950049&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider3%2Fimage_14.jpg?generation=1737824756367857&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider3%2Fimage_15.jpg?generation=1737824756604272&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider3%2Fimage_16.jpg?generation=1737824756773849&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider3%2Fimage_17.jpg?generation=1737824757563197&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider3%2Fimage_18.jpg?generation=1737824757941509&alt=media"
+              ],
            "content": [
                 {
                     "content": "<p>COMPRESIÓN UNIAXIAL EN ROCAS.</p>"
