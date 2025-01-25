@@ -9,7 +9,7 @@ const servicios = defineCollection({
         header: z.array(z.string()),
         video: z.string().default(''),
         additionalData: z.object({
-            sloga: z.string().default(''),
+            slogan: z.string().default(''),
             image: z.string().default(''),
         }),
         sections: z.array(z.object({
