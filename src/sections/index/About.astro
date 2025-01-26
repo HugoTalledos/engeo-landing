@@ -1,8 +1,8 @@
-<section id="about-us">
-    <span class="divider"/>
-    <h1>ACERCA DE NOSOTROS</h1>
-    <div class="about-info">
-        <div class="about-info-text">
+<article id="about-us" class="flex flex-col justify-center items-center px-10 md:px-[9em] md:px-10">
+    <span class="divider w-[25%]"/>
+    <h1 class="mb-4 text-lg text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl">ACERCA DE NOSOTROS</h1>
+    <section class="flex flex-col lg:flex-row text-justify gap-[30px]">
+        <div>
             <p>
                 ENGEO INGENIERÍA Y GEOCIENCIAS, ha pasado de ser una empresa tradicional de ingeniería de suelos y
                 cimentaciones a una empresa diversificada de servicios de consultoría geotécnica especializada,
@@ -14,87 +14,43 @@
                 concretos, morteros, lechada y asfalto, para proyectos y clientes en todo el territorio nacional.
             </p>
         </div>
-        <video src="https://engeo.com.co/wp-content/uploads/2021/12/Exploracion-geotecnica.mp4" autoplay poster="posterimage.jpg">
+        <video class="w-full lg:w-[50%]" src="https://engeo.com.co/wp-content/uploads/2021/12/Exploracion-geotecnica.mp4" autoplay poster="posterimage.jpg">
             Tu navegador no admite el elemento <code>video</code>.
         </video>
-    </div>
-    <div class="professional-talent">
-        <div class="professional-talent-title">
-            <span class="divider"/>
-            <h1>TALENTO PROFESIONAL</h1>
+    </section>
+    <section class="flex flex-col gap-[30px] w-full">
+        <span class="divider w-full lg:w-[40%]"/>
+        <div class="flex flex-col lg:flex-row gap-[30px] text-justify">
+            <h1 class="mb-4 text-lg text-center lg:text-left font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl text-pretty">TALENTO PROFECIONAL</h1>
+            <p>
+                Los integrantes del equipo ENGEO S.A.S, son profesionales con amplia experiencia, conocimiento especializado
+                e innovación. Los clientes valoran la cultura práctica de resolución de problemas y gestión de riesgos profundamente
+                arraigada que da como resultado soluciones creativas pero prácticas para el desarrollo de los diferentes proyectos
+                de ingeniería.
+            </p>
         </div>
-        <p>
-            Los integrantes del equipo ENGEO S.A.S, son profesionales con amplia experiencia, conocimiento especializado
-            e innovación. Los clientes valoran la cultura práctica de resolución de problemas y gestión de riesgos profundamente
-            arraigada que da como resultado soluciones creativas pero prácticas para el desarrollo de los diferentes proyectos
-            de ingeniería.
-        </p>
-    </div>
-</section>
+    </section>
+</article>
 
 <style>
+    p {
+        line-height: 1.9em;
+        letter-spacing: -0.8px;
+    }
     #about-us {
         background-color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0 12em;
     }
 
     #about-us .divider {
-        border: .5px solid black;
-        width: 25%;
-        margin: 25px 25px 50px;
+        border: 1px solid black;
+        margin: 2em 0;
         border-radius: 5px;
     }
 
     #about-us h1 {
         color: #091B49;
-        font-size: 45px;
-        font-weight: 600;
-        text-transform: uppercase;
         letter-spacing: 12px;
         text-shadow: 0px 0px 10px #908F95;
-        margin: 0;
-    }
-
-    .about-info, .professional-talent {
-        display: flex;
-        justify-content: space-between;
-        padding: 1em 3em;
-        width: 100%;
-        gap: 50px;
-    }
-
-    .about-info-text, .professional-talent p {
-        width: 50%;
-        letter-spacing: -0.8px;
-        line-height: 1.7em;
-        text-align: justify;
-    }
-
-    .about-info-text p, .professional-talent p {
-        margin-bottom: 1.6em;
-        font-size: 18px;
-    }
-    
-    .about-info video, .professional-talent-title {
-        width: 50%;
-    }
-
-    .professional-talent-title {
-        display: flex;
-        flex-direction: column;
-        line-height: 5rem;
-        justify-content: flex-start;
-    }
-
-    #about-us .professional-talent-title .divider {
-        border: .5px solid black;
-        width: 95%;
-        margin: 25px 25px 50px;
-        border-radius: 5px;
     }
 
 </style>
