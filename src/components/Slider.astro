@@ -1,97 +1,68 @@
-<div class="container-slider">
-    <div class="overlay" />
-    <div class="container-slider-images">
-        <img src="https://engeo.com.co/wp-content/uploads/2021/12/INGENIERIA-GEOTECNICA-4-scaled.jpg" />
+---
+import { getEntry } from "astro:content";
+
+const homeImages = await getEntry("inicio", "inicio");
+
+if (!homeImages) {
+  throw new Error("Could not find blog post 1");
+}
+
+const { data } = homeImages;
+---
+
+<div class="relative w-full h-56 md:h-[490px] overflow-hidden">
+  <div class="absolute w-full h-56 z-[2] md:h-[490px] overlay"></div>
+  <div class="absolute w-full h-full z-[3] flex flex-col justify-center items-center gap-[30px] m-auto ">
+    <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-7xl text-white title">ENGEO</h1>
+    <h2 class="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-4xl text-white title" >INGENIERÍA Y GEOCIENCIAS</h2>
+    <button class="call-button"> CONTÁCTENOS</button>
+  </div>
+  <div id="controls-carousel" class="relative w-full z-[1]" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-[490px]">
+      {
+        data.inicioHeader.map((image) => (
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src={image}
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
+              alt="..."
+            />
+          </div>
+        ))
+      }
     </div>
-    <div class="principal-info">
-        <h1>ENGEO</h1>
-        <h2>INGENIERÍA Y GEOCIENCIAS</h2>
-        <button> CONTÁCTENOS</button>
-    </div>
+  </div>
 </div>
 
 <style>
-    .container-slider {
-        position: relative;
-        width: 100%;
-        height: 490px;
-        overflow: hidden;
-    }
+  .overlay {
+    top: 0;
+    left: 0;
+    background-color: #06112f;
+    opacity: 0.45;
+  }
 
-    .container-slider .container-slider-images {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-    }
+ .title {
+    letter-spacing: 12px;
+    text-shadow: 0px 0px 10px #908f95;
+  }
 
-    .container-slider .container-slider-images img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
 
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #06112F;
-        opacity: 0.45;
-        z-index: 2;
-
-    }
-
-    .container-slider .principal-info {
-        position: absolute; 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        margin: auto;
-        width: 100%;
-        height: 100%;
-        z-index: 3;
-    }
-
-    .container-slider .principal-info h1 {
-        padding: 0;
-        margin: 0;
-        color: #FBFBFB;
-        font-size: 65px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 12px;
-        text-shadow: 0px 0px 10px #908F95;
-    }
-
-    .container-slider .principal-info h2 {
-        padding: 0;
-        margin: 0;
-        color: #FBFBFB;
-        font-size: 45px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 12px;
-        text-shadow: 0px 0px 10px #908F95;
-    }
-
-    .principal-info button {
-        font-size: 14px;
-        font-weight: 600;
-        text-transform: uppercase;
-        text-shadow: 0px 0px 10px rgba(27.391304347826054, 42.12901701323246, 196.87499999999997, 0.3);
-        fill: #D4CDCDFC;
-        color: #D4CDCDFC;
-        background-color: #091B49;
-        border-style: solid;
-        border-color: #091B49;
-        border-radius: 15px 15px 15px 15px;
-        box-shadow: 0px 0px 10px 0px rgba(5.250000000000009, 5.0559782608695745, 5.0559782608695745, 0.98);
-        padding: 15px 45px 15px 45px;
-    }
+  .call-button {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px
+      rgba(27.391304347826054, 42.12901701323246, 196.87499999999997, 0.3);
+    fill: #d4cdcdfc;
+    color: #d4cdcdfc;
+    background-color: #091b49;
+    border-style: solid;
+    border-color: #091b49;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 10px 0px
+      rgba(5.250000000000009, 5.0559782608695745, 5.0559782608695745, 0.98);
+    padding: 15px 45px 15px 45px;
+  }
 </style>
