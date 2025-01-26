@@ -1,105 +1,89 @@
 ---
-import wave from '../assets/wave.svg';
+import { getEntry } from "astro:content";
+
+const homeImages = await getEntry('inicio', 'inicio');
+
+if (!homeImages) {
+  throw new Error('Could not find blog post 1');
+}
+
+const { data } = homeImages;
 ---
-
-<header>
-    <div class="navbar">
-        <picture>
-            <img src="https://engeo.com.co/wp-content/uploads/2021/10/cropped-ENGEO-GEOCIENCIAS-LOGO.png-251x55.gif">
-        </picture>
-        <nav>
-            <ul class="main-menu">
-                <li class="menu-parent">Inicio</li>
-                <li class="menu-parent">Servicios</li>
-                <!--<li>
-                    Servicios
-                    <ul>
-                        <li><a href="/">Ingeniería Geotécnica</a></li>
-                        <li><a href="/">Ingeniería de Rocas</a></li>
-                        <li><a href="/">Geología</a></li>
-                        <li><a href="/">Topografía</a></li>
-                        <li><a href="/">Laboratorios de Ingeniería</a></li>
-                        <li><a href="/">Aguas Subterráneas y Pozos Profundos</a></li>
-                        <li><a href="/">Ingeeniería Vial</a></li>
-                        <li><a href="/">Ingeniería Hiidráulica</a></li>
-                        <li><a href="/">Ingeniería Estructural</a></li>
-                        <li><a href="/">Geomática</a></li>
-                        <li><a href="/">Obras Civiles</a></li>
-                    </ul>
-                </li> -->
-                <li class="menu-parent">Nosotros</li>
-                <li class="menu-parent">Contáctenos</li>
+<nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src={data.logo} class="h-8" alt="Flowbite Logo" />
+    </a>
+    <button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+      </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="/" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">
+            Inicio
+          </a>
+        </li>
+        <li>
+          <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+            Servicios
+            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg>
+          </button>
+          <!-- Dropdown menu -->
+          <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
+              <li>
+                <a href="/servicios/ingenieria-geotecnica" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Ingeniería Geotécnica</a>
+              </li>
+              <li>
+                <a href="/servicios/ingenieria-de-rocas" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Ingeniería de Rocas</a>
+              </li>
+              <li>
+                <a href="/servicios/geologia" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Geología</a>
+              </li>
+              <li>
+                <a href="/servicios/topografia" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Topografía</a>
+              </li>
+              <li>
+                <a href="/servicios/laboratorios-de-ingenieria" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Laboratorios de Ingeniería</a>
+              </li>
+              <li>
+                <a href="/servicios/aguas-pozos" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Aguas Subterráneas y Pozos Profundos</a>
+              </li>
+              <li>
+                <a href="/servicios/ingenieria-vial" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Ingeniería Vial</a>
+              </li>
+              <li>
+                <a href="/servicios/ingenieria-hidraulica" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Ingeniería Hidráulica</a>
+              </li>
+              <li>
+                <a href="/servicios/ingenieria-estructural" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Ingeniería de Estructural</a>
+              </li>
+              <li>
+                <a href="/servicios/geomatica" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Geomática</a>
+              </li>
+              <li>
+                <a href="/servicios/obras-civiles" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Obras Civiles</a>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </li>
+        <li>
+          <a href="/#nosotros" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+            Nosotros
+          </a>
+        </li>
+        <li>
+          <a href="/#contacto" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+            Contáctenos
+          </a>
+        </li>
+      </ul>
     </div>
-    <img id="wave-nave" src={wave.src} />
-</header>
-  
-
-<style>
-	.navbar {
-        padding: 1em 10em;
-        background-color: white;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        box-sizing: border-box;
-        width: 100%;
-        height: 86px;
-        position: relative;
-        z-index: 2;
-    }
-
-    .navbar picture {
-        width: 251px;
-        height: 51px;
-    }
-
-   .navbar img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    nav {
-        width: 50%;
-        height: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 10px;
-        color: #091b49;
-        font-size: 1.2rem;
-    }
-
-    ul, li {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 10px;
-        width: 100%;
-    }
-
-    nav ul li {
-        padding: 1.2em;
-        transition: all 200ms ease-in 0ms;
-    }
-
-    nav ul li.menu-parent:hover {
-        transform: scale(1.3);
-    }
-
-    #wave-nave {
-        position: absolute;
-        transform: translateY(-220px);
-        z-index: 3;
-    }
-</style>
+  </div>
+</nav>  

@@ -24,4 +24,17 @@ const servicios = defineCollection({
     })
 })
 
-export const collections = { servicios }
+const inicio = defineCollection({
+    type: 'data',
+    schema: z.object({
+        logo: z.string().url(),
+        aboutus: z.string().url(),
+        inicioClientes: z.array(z.string().url()),
+        inicioHeader: z.array(z.string().url()),
+        inicioServiciosSlider: z.array(z.string().url()),
+        inicioServiciosSliderDos: z.array(z.string().url()),
+        inicioServiciosSliderTres: z.array(z.string().url())
+    })
+});
+
+export const collections = { inicio, servicios }

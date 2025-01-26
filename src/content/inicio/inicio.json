@@ -1,9 +1,7 @@
 {
-    "inicio": [
-      "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2F?generation=1737817310016200&alt=media",
-      "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fabout-us.mp4?generation=1737820170934197&alt=media"
-    ],
-    "inicio/clientes": [
+    "logo": "https://storage.googleapis.com/landing-engeo.firebasestorage.app/inicio/logo.gif",
+    "aboutus": "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fabout-us.mp4?generation=1737820170934197&alt=media",
+    "inicioClientes": [
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fclientes%2Fcliente-1.png?generation=1737820381297983&alt=media",
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fclientes%2Fcliente-10.png?generation=1737820384514633&alt=media",
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fclientes%2Fcliente-11.png?generation=1737820384637083&alt=media",
@@ -16,7 +14,7 @@
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fclientes%2Fcliente-8.jpg?generation=1737820383525561&alt=media",
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fclientes%2Fcliente-9.jpg?generation=1737820383775525&alt=media"
     ],
-    "inicio/header": [
+    "inicioHeader": [
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fheader%2F?generation=1737817318913247&alt=media",
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fheader%2Fheader-1.jpg?generation=1737820129916972&alt=media",
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fheader%2Fheader-2.jpg?generation=1737820130137849&alt=media",
@@ -26,14 +24,14 @@
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fheader%2Fheader-6.jpg?generation=1737820132206609&alt=media",
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fheader%2Fheader-7.jpg?generation=1737820133023051&alt=media"
     ],
-    "inicio/servicios/slider1": [
+    "inicioServiciosSlider": [
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fservicios%2Fslider1%2Fslider-1.jpg?generation=1737820957242337&alt=media",
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fservicios%2Fslider1%2Fslider-2.jpg?generation=1737820957402207&alt=media",
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fservicios%2Fslider1%2Fslider-4.jpg?generation=1737820956812145&alt=media",
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fservicios%2Fslider1%2Fslider-5.jpg?generation=1737820958518483&alt=media",
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fservicios%2Fslider1%2Fslider-6.jpg?generation=1737820958804957&alt=media"
     ],
-    "inicio/servicios/slider2": [
+    "inicioServiciosSliderDos": [
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fservicios%2Fslider2%2Fslider-1.jpg?generation=1737820971375414&alt=media",
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fservicios%2Fslider2%2Fslider-2.jpg?generation=1737820971106824&alt=media",
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fservicios%2Fslider2%2Fslider-3.jpg?generation=1737820971321957&alt=media",
@@ -41,7 +39,7 @@
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fservicios%2Fslider2%2Fslider-5.jpg?generation=1737820972990498&alt=media",
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fservicios%2Fslider2%2Fslider-6.jpg?generation=1737820973238461&alt=media"
     ],
-    "inicio/servicios/slider3": [
+    "inicioServiciosSliderTres": [
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fservicios%2Fslider3%2Fslider-1.jpg?generation=1737820985593259&alt=media",
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fservicios%2Fslider3%2Fslider-2.jpg?generation=1737820985934689&alt=media",
       "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/inicio%2Fservicios%2Fslider3%2Fslider-3.jpg?generation=1737820986243793&alt=media",
