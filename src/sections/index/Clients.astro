@@ -1,105 +1,149 @@
 ---
 import { getEntry } from "astro:content";
 
-const homeImages = await getEntry('inicio', 'inicio');
+const homeImages = await getEntry("inicio", "inicio");
 
 if (!homeImages) {
-  throw new Error('Could not find blog post 1');
+  throw new Error("Could not find blog post 1");
 }
 
 const { data } = homeImages;
 ---
 
-<article id="clients" class="flex flex-col justify-center items-center px-10 md:px-[9em] md:px-10">
-    <span class="dots-divider"/>
-    <h1 class="mb-4 text-lg text-center lg:text-left font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl text-pretty">ALGUNOS DE NUESTROS CLIENTES</h1>
-    <div class="clients-gallery hidden lg:grid">
-        {
-            data.inicioClientes.map((cliente) => (
-                <picture>
-                    <img src={cliente} alt="" />
-                </picture>
-            ))
-        }
+<article
+  id="clients"
+  class="flex flex-col justify-center items-center px-10 md:px-[9em] md:px-10"
+>
+  <span class="dots-divider"></span>
+  <h1
+    class="mb-4 text-lg text-center lg:text-left font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl text-pretty"
+  >
+    ALGUNOS DE NUESTROS CLIENTES
+  </h1>
+  <div class="clients-gallery hidden lg:grid">
+    {
+      data.inicioClientes.map((cliente) => (
+        <picture>
+          <img src={cliente} alt="" />
+        </picture>
+      ))
+    }
+  </div>
+  <div
+    id="controls-carousel"
+    class="relative w-full lg:hidden"
+    data-carousel="slide"
+  >
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-[490px]">
+      {
+        data.inicioClientes.map((image) => (
+          <div class="hidden duration-500 ease-in-out" data-carousel-item>
+            <img
+              src={image}
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+        ))
+      }
     </div>
-    <div id="controls-carousel" class="relative w-full lg:hidden" data-carousel="slide">
-        <!-- Carousel wrapper -->
-        <div class="relative h-56 overflow-hidden rounded-lg md:h-[490px]">
-          {
-            data.inicioClientes.map((image) => (
-              <div class="hidden duration-500 ease-in-out" data-carousel-item>
-                <img
-                  src={image}
-                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt="..."
-                />
-              </div>
-            ))
-          }
-        </div>
-        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                </svg>
-                <span class="sr-only">Previous</span>
-            </span>
-        </button>
-        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                </svg>
-                <span class="sr-only">Next</span>
-            </span>
-        </button>
-      </div>
-    <span class="dots-divider"/>
+    <button
+      type="button"
+      class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-prev
+    >
+      <span
+        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+      >
+        <svg
+          class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 6 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 1 1 5l4 4"></path>
+        </svg>
+        <span class="sr-only">Previous</span>
+      </span>
+    </button>
+    <button
+      type="button"
+      class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-next
+    >
+      <span
+        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+      >
+        <svg
+          class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 6 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m1 9 4-4-4-4"></path>
+        </svg>
+        <span class="sr-only">Next</span>
+      </span>
+    </button>
+  </div>
+  <span class="dots-divider"></span>
 </article>
 
 <style>
-    #clients {
-        background-color: white;
-    }
+  #clients {
+    background-color: white;
+  }
 
-    #clients .dots-divider {
-        border-top: 5px dotted black;
-        width: 68%;
-        margin: 5em 25px 50px;
-        border-radius: 5px;
-    }
+  #clients .dots-divider {
+    border-top: 5px dotted black;
+    width: 68%;
+    margin: 5em 25px 50px;
+    border-radius: 5px;
+  }
 
-    #clients h1 {
-        color: #091B49;
-        letter-spacing: 12px;
-        text-shadow: 0px 0px 10px #908F95;
-    }
+  #clients h1 {
+    color: #091b49;
+    letter-spacing: 12px;
+    text-shadow: 0px 0px 10px #908f95;
+  }
 
-    .clients-gallery {
-        gap: 2.6rem;
-        grid-auto-flow: dense;
-        grid-auto-rows: 10rem;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        width: 100%;
-    }
+  .clients-gallery {
+    gap: 2.6rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 10rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    width: 100%;
+  }
 
-    .clients-gallery picture {
-        width: 250px;
-        height: 200px;
-        overflow: hidden;
-        padding: 1em;
-        margin: auto;
-    }
+  .clients-gallery picture {
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    padding: 1em;
+    margin: auto;
+  }
 
-    .clients-gallery picture img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: center;
-    }
+  .clients-gallery picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
 
-    .clients-gallery picture:hover {
-        box-shadow: 10px 5px 10px #00000029;
-    }
-
+  .clients-gallery picture:hover {
+    box-shadow: 10px 5px 10px #00000029;
+  }
 </style>
