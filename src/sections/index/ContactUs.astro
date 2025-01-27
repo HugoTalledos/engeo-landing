@@ -1,235 +1,212 @@
 ---
-import youtube from '../../assets/youtube.png';
-import facebook from '../../assets/facebook.png';
-import instagram from '../../assets/instagram.png';
-
+import youtube from "../../assets/youtube.png";
+import facebook from "../../assets/facebook.png";
+import instagram from "../../assets/instagram.png";
 ---
-<section id="contact-us">
-    <h1>CONTÁCTENOS</h1>
-    <div class="contact-form">
-        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Carrera%2014%20%23%2015-80%2C%20Sogamoso%2CColombia&amp;t=m&amp;z=18&amp;output=embed&amp;iwloc=near" title="Carrera 14 # 15-80, Sogamoso,Colombia" aria-label="Carrera 14 # 15-80, Sogamoso,Colombia"></iframe>
-        <form>
-            <label for="user-email">Tu correo: </label>
-            <input type="email" name="user-email"/>
-            <label for="services">¿Quieres cotizar algun servicio?</label>
-            <select name="services">
-                <option value="NA">------------------</option>
-                <option value="ing-geo">Ingeniería Geotécnica</option>
-                <option value="ing-ro">Ingenierpia de Rocas</option>
-                <option value="geo">Geología</option>
-                <option value="top">Topografía</option>
-                <option value="lab-ing">Laboratorios de Ingeniería</option>
-                <option value="agu-po">Aguas Subterráneas y Pozos profundos</option>
-                <option value="ing-via">Ingeniería Vial</option>
-                <option value="ing-hi">Ingeniería Hidráulica</option>
-                <option value="ing-es">Ingeniería Estructural</option>
-                <option value="geomatica">Geomática</option>
-                <option value="obras-civi">Obras Civiles</option>
-            </select>
-            <label for="subject">¿Cómo podemos ayudarte?</label>
-            <input type="text" name="subject"/>
-            <label for="details">Brindanos más detalles</label>
-            <textarea name="details"/>
-            <button>Enviar</button>
-        </form>
-    </div>
-    <footer>
-        <section class="footer-location">
-            <div>
-                <h2>Ubicación</h2>
-                <ul>
-                    <li>
-                        <p>Carrera 14 # 15-80</p>
-                        <p>Edificio Torres de Alcalá, Oficina 201</p>
-                        <p>Sogamoso – Boyacá</p>
-                    </li>
-                    <li>
-                        <p>Carrera 74 #163-74 Interior 10, Oficina 201</p>
-                        <p>Bogotá D.C</p>
-                    </li>
-                </ul>
-            </div>
-            <section>
-                <h2>Contacto</h2>
-                <section class="footer-contact-info">
-                    <div>
-                        <p>Celular: </p>
-                        <p>+57 313 342 8939</p>
-                        <p>+57 313 379 0974</p>
-                    </div>
-                    <div>
-                        <p>Teléfono:</p>
-                        <p>(8) 775 2275</p>
-                    </div>
-                    </section>
-                <section>
-                    <p>Correo:</p>
-                    <p>engeoingenieria@gmail.com</p> 
-                    <p>contacto@engeo.com.co</p> 
-                </section>
-            </section>
-            <div>
-                <h2>Horarios</h2>
-                <p>Lunes – Viernes: 6:00 am – 8:00 pm</p>
-                <p>Sábado – Domingo: 8:00 am – 4:00 pm</p>
-            </div>
+
+<article
+  id="contact-us"
+  class="bg-white flex flex-col justify-center items-center px-10 md:px-[9em] my-9"
+>
+  <h1
+    class="mb-4 text-lg text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl"
+  >
+    CONTÁCTENOS
+  </h1>
+  <section
+    class="flex flex-col md:flex-row w-full gap-[20px] justify-center items-center"
+  >
+    <iframe
+      class="w-full h-[350px]"
+      frameborder="0"
+      scrolling="no"
+      marginheight="0"
+      marginwidth="0"
+      src="https://maps.google.com/maps?q=Carrera%2014%20%23%2015-80%2C%20Sogamoso%2CColombia&t=m&z=18&output=embed&iwloc=near"
+      title="Carrera 14 # 15-80, Sogamoso,Colombia"
+      aria-label="Carrera 14 # 15-80, Sogamoso,Colombia"></iframe>
+    <form class="flex flex-col h-[500px] w-full gap-[10px]">
+      <label for="user-email">Tu correo: </label>
+      <input type="email" name="user-email" />
+      <label for="services">¿Quieres cotizar algun servicio?</label>
+      <select name="services">
+        <option value="NA">------------------</option>
+        <option value="ing-geo">Ingeniería Geotécnica</option>
+        <option value="ing-ro">Ingenierpia de Rocas</option>
+        <option value="geo">Geología</option>
+        <option value="top">Topografía</option>
+        <option value="lab-ing">Laboratorios de Ingeniería</option>
+        <option value="agu-po">Aguas Subterráneas y Pozos profundos</option>
+        <option value="ing-via">Ingeniería Vial</option>
+        <option value="ing-hi">Ingeniería Hidráulica</option>
+        <option value="ing-es">Ingeniería Estructural</option>
+        <option value="geomatica">Geomática</option>
+        <option value="obras-civi">Obras Civiles</option>
+      </select>
+      <label for="subject">¿Cómo podemos ayudarte?</label>
+      <input type="text" name="subject" />
+      <label for="details">Brindanos más detalles</label>
+      <textarea name="details"></textarea>
+      <button>Enviar</button>
+    </form>
+  </section>
+  <footer class="w-full">
+    <section
+      class="flex flex-col md:flex-row justify-around text-center gap-[15px] w-full"
+    >
+      <div>
+        <h2
+          class="mb-4 text-2xl text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-4xl"
+        >
+          Ubicación
+        </h2>
+        <ul>
+          <li>
+            <p>Carrera 14 # 15-80</p>
+            <p>Edificio Torres de Alcalá, Oficina 201</p>
+            <p>Sogamoso – Boyacá</p>
+          </li>
+          <li>
+            <p>Carrera 74 #163-74 Interior 10, Oficina 201</p>
+            <p>Bogotá D.C</p>
+          </li>
+        </ul>
+      </div>
+      <section>
+        <h2
+          class="mb-4 text-2xl text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-4xl"
+        >
+          Contacto
+        </h2>
+        <section class="flex flex-col md:flex-row gap-[30px] my-3">
+          <div>
+            <p>Celular:</p>
+            <p>+57 313 342 8939</p>
+            <p>+57 313 379 0974</p>
+          </div>
+          <div>
+            <p>Teléfono:</p>
+            <p>(8) 775 2275</p>
+          </div>
         </section>
-        <section class="footer-social">
-            <h2>Síguenos en</h2>
-            <div class="footer-social-icons">
-                <a
-                    href="https://www.facebook.com/ENGEO-Ingenieria-y-Geociencias-107641734268730"
-                    target="_blank"
-                >
-                    <img src={facebook.src} alt="logo-facebook" />
-                </a>
-                <a><img src={youtube.src} alt="" /> </a>
-                <a><img src={instagram.src} alt="" /> </a>
-            </div>
+        <section>
+          <p>Correo:</p>
+          <p>engeoingenieria@gmail.com</p>
+          <p>contacto@engeo.com.co</p>
         </section>
-        <section class="acknowledgements">
-            <a href="https://www.flaticon.es/iconos-gratis/logotipo-de-instagram" title="logotipo de instagram iconos">Logotipos redes sociales iconos creados por Hight Quality Icons - Flaticon</a>
-            <a href="https://www.flaticon.es/iconos-gratis/facebook" title="facebook iconos">Facebook iconos creados por Hight Quality Icons - Flaticon</a>
-            <a href="https://www.flaticon.es/iconos-gratis/youtube" title="youtube iconos">Youtube iconos creados por Md Tanvirul Haque - Flaticon</a>
-        </section>
-    </footer>
-</section>
+      </section>
+      <div>
+        <h2>Horarios</h2>
+        <p>Lunes – Viernes: 6:00 am – 8:00 pm</p>
+        <p>Sábado – Domingo: 8:00 am – 4:00 pm</p>
+      </div>
+    </section>
+    <section class="flex flex-col md:flex-row justify-evenly items-center my-4">
+      <h2
+        class="mb-4 text-2xl text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-4xl"
+      >
+        Síguenos en
+      </h2>
+      <div
+        class="flex justify-center items-center w-[70%] md:w-[50%] h-[40px] gap-[40px]"
+      >
+        <a
+          href="https://www.facebook.com/ENGEO-Ingenieria-y-Geociencias-107641734268730"
+          target="_blank"
+        >
+          <img src={facebook.src} alt="logo-facebook" />
+        </a>
+        <a><img src={youtube.src} alt="" /> </a>
+        <a><img src={instagram.src} alt="" /> </a>
+      </div>
+    </section>
+    <section class="flex flex-col p-3 justify-center items-center gap-[5px] acknowledgements text-xs">
+      <a
+        href="https://www.flaticon.es/iconos-gratis/logotipo-de-instagram"
+        title="logotipo de instagram iconos"
+        target="_blank"
+        >Logotipos redes sociales iconos creados por Hight Quality Icons -
+        Flaticon</a
+      >
+      <a
+        href="https://www.flaticon.es/iconos-gratis/facebook"
+        title="facebook iconos"
+        target="_blank"
+        >Facebook iconos creados por Hight Quality Icons - Flaticon</a
+      >
+      <a
+        href="https://www.flaticon.es/iconos-gratis/youtube"
+        title="youtube iconos"
+        target="_blank"
+        >Youtube iconos creados por Md Tanvirul Haque - Flaticon</a
+      >
+    </section>
+  </footer>
+</article>
 
 <style>
-    #contact-us {
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0 12em;
-    }
+  #contact-us h1 {
+    color: #091b49;
+    letter-spacing: 12px;
+    text-shadow: 0px 0px 10px #908f95;
+  }
 
-    #contact-us h1 {
-        color: #091B49;
-        font-size: 45px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 12px;
-        text-shadow: 0px 0px 10px #908F95;
-    }
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 100%;
+  }
 
-    .contact-form {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        gap: 30px;
-        justify-content: center;
-        align-items: center;
-    }
+  form input,
+  form select,
+  form textarea {
+    color: #666;
+    padding: 0.75em;
+    height: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eaeaea;
+    border-radius: 2px;
+    background: #ffffff;
+    box-shadow: none;
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+  }
 
-    .contact-form iframe {
-        width: 100%;
-        height: 350px;
-    }
+  form button {
+    background-color: #0170b9;
+    border-radius: 2px;
+    border: 0;
+    float: none;
+    height: auto;
+    margin: 0;
+    padding: 10px 20px;
+    width: auto;
+    color: white;
+  }
 
-    .contact-form form {
-        display: flex;
-        flex-direction: column;
-        height: 350px;
-        width: 100%;
-    }
+  .footer-location ul li {
+    margin-bottom: 50px;
+  }
 
-    .contact-form form input,.contact-form form select, .contact-form form textarea {
-        margin-bottom: 25px;
-        margin-top: 5px3;
-        color: #666;
-        padding: .75em;
-        height: auto;
-        border-width: 1px;
-        border-style: solid;
-        border-color: #eaeaea;
-        border-radius: 2px;
-        background: #ffffff;
-        box-shadow: none;
-        box-sizing: border-box;
-        transition: all .2s linear;
-    }
+  div a {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+  }
 
-    .contact-form form button {
-        background-color: #0170b9;
-        border-radius: 2px;
-        border: 0;
-        float: none;
-        height: auto;
-        margin: 0;
-        padding: 10px 20px;
-        width: auto;
-        color: white;
-    }
+  div a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-    footer {
-        width: 100%;
-    }
+  .acknowledgements {
+    background-color: #eeeeee;
+  }
 
-    .footer-location {
-        display: flex;
-        padding: 3em 0;
-        justify-content: space-around;
-        text-align: center;
-    }
-
-    .footer-location ul, .footer-location li {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    .footer-location ul li {
-        margin-bottom: 50px;
-    }
-
-    .footer-contact-info {
-        display: flex;
-        gap: 30px;
-    }
-    
-    .footer-social {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-bottom: 2em;
-    } 
-
-    .footer-social-icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        height: 40px;
-        gap: 40px;
-    }
-
-    .footer-social-icons a {
-        width: 40px;
-        height: 40px;
-        overflow: hidden;
-    }
-
-    .footer-social-icons a img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .acknowledgements {
-        background-color: #eeeeee;
-        display: flex;;
-        padding: 1em;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-    }
-    
-    .acknowledgements a {
-        font-size: 13px;
-        text-decoration: none;
-        color: #4b4f58;
-    }
-
+  .acknowledgements a {
+    color: #4b4f58;
+  }
 </style>
