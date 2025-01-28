@@ -5,7 +5,7 @@ import instagram from "../../assets/instagram.png";
 ---
 
 <article
-  id="contact-us"
+  id="contacto"
   class="bg-white flex flex-col justify-center items-center px-10 md:px-[9em] my-9"
 >
   <h1
@@ -114,10 +114,14 @@ import instagram from "../../assets/instagram.png";
           href="https://www.facebook.com/ENGEO-Ingenieria-y-Geociencias-107641734268730"
           target="_blank"
         >
-          <img src={facebook.src} alt="logo-facebook" />
+          <img src={facebook.src} alt="logo-facebook" loading="lazy" />
         </a>
-        <a><img src={youtube.src} alt="" /> </a>
-        <a><img src={instagram.src} alt="" /> </a>
+        <a href="https://youtube.com" target="_blank">
+          <img src={youtube.src} alt="logo youtube" loading="lazy"/>
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src={instagram.src} alt="logo instagram" loading="lazy"/>
+        </a>
       </div>
     </section>
     <section class="flex flex-col p-3 justify-center items-center gap-[5px] acknowledgements text-xs">
@@ -145,7 +149,7 @@ import instagram from "../../assets/instagram.png";
 </article>
 
 <style>
-  #contact-us h1 {
+  #contacto h1 {
     color: #091b49;
     letter-spacing: 12px;
     text-shadow: 0px 0px 10px #908f95;
