@@ -22,9 +22,9 @@ const { data } = homeImages;
   </h1>
   <div class="clients-gallery hidden lg:grid">
     {
-      data.inicioClientes.map((cliente) => (
+      data.inicioClientes.map((cliente, idx) => (
         <picture>
-          <img src={cliente} alt="" />
+          <img src={cliente} alt={`Cliente engeo ${idx}`} loading="lazy"/>
         </picture>
       ))
     }
@@ -37,12 +37,13 @@ const { data } = homeImages;
     <!-- Carousel wrapper -->
     <div class="relative h-56 overflow-hidden rounded-lg md:h-[490px]">
       {
-        data.inicioClientes.map((image) => (
+        data.inicioClientes.map((image, idx) => (
           <div class="hidden duration-500 ease-in-out" data-carousel-item>
             <img
               src={image}
               class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
+              alt={`carusel clientes - imagen ${idx}`}
+              loading="lazy"
             />
           </div>
         ))

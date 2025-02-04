@@ -21,12 +21,13 @@ const { data } = homeImages;
     <!-- Carousel wrapper -->
     <div class="relative h-56 overflow-hidden rounded-lg md:h-[490px]">
       {
-        data.inicioHeader.map((image) => (
+        data.inicioHeader.map((image, idx) => (
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img
               src={image}
+              loading="lazy"
               class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
-              alt="..."
+              alt={`carusel principal - imagen ${idx}`}
             />
           </div>
         ))

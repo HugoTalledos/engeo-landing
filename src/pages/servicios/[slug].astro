@@ -47,12 +47,13 @@ const { data } = service;
           data-carousel="slide"
         >
           <div class="relative h-56 overflow-hidden rounded-lg md:h-[490px]">
-            {data.header.map((image) => (
+            {data.header.map((image, id) => (
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img
                   src={image}
                   class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
-                  alt="..."
+                  alt={`carusel ${data.title} uno - imagen ${id}`}
+                  loading="lazy"
                 />
               </div>
             ))}
@@ -71,6 +72,8 @@ const { data } = service;
           <img
             src={data.additionalData.image}
             class="w-full h-full object-contain"
+            alt="Logo onac"
+            loading="lazy"
           />
         </picture>
       </div>
@@ -94,7 +97,7 @@ const { data } = service;
               data-carousel="slide"
             >
               <div class="relative h-56 overflow-hidden rounded-lg md:h-[490px]">
-                {section.images.map((image) => (
+                {section.images.map((image, id) => (
                   <div
                     class="hidden duration-700 ease-in-out"
                     data-carousel-item
@@ -102,7 +105,8 @@ const { data } = service;
                     <img
                       src={image}
                       class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
-                      alt="..."
+                      alt={`carusel servicios uno - imagen ${id}`}
+                      loading="lazy"
                     />
                   </div>
                 ))}

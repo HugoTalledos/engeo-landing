@@ -26,12 +26,13 @@ const { data } = homeImages;
       <!-- Carousel wrapper -->
       <div class="relative w-full h-56 overflow-hidden rounded-lg md:h-96">
         {
-          data.inicioServiciosSlider.map((image) => (
+          data.inicioServiciosSlider.map((image, idx) => (
             <div class="hidden duration-500 ease-in-out" data-carousel-item>
               <img
                 src={image}
                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
-                alt="..."
+                alt={`carusel servicios uno - imagen ${idx}`}
+                loading="lazy"
               />
             </div>
           ))
@@ -51,12 +52,13 @@ const { data } = homeImages;
       <!-- Carousel wrapper -->
       <div class="relative w-full h-56 overflow-hidden rounded-lg md:h-96">
         {
-          data.inicioServiciosSliderDos.map((image) => (
+          data.inicioServiciosSliderDos.map((image, idx) => (
             <div class="hidden duration-500 ease-in-out" data-carousel-item>
               <img
                 src={image}
                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
-                alt="..."
+                alt={`carusel servicios dos - imagen ${idx}`}
+                loading="lazy"
               />
             </div>
           ))
@@ -81,12 +83,13 @@ const { data } = homeImages;
         <!-- Carousel wrapper -->
         <div class="relative w-full h-56 overflow-hidden rounded-lg md:h-80">
           {
-            data.inicioServiciosSliderTres.map((image) => (
+            data.inicioServiciosSliderTres.map((image, idx) => (
               <div class="hidden duration-500 ease-in-out" data-carousel-item>
                 <img
                   src={image}
                   class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
-                  alt="..."
+                  alt={`carusel servicios tres - imagen ${idx}`}
+                  loading="lazy"
                 />
               </div>
             ))
