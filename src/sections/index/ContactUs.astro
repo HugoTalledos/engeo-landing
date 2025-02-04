@@ -2,6 +2,8 @@
 import youtube from "../../assets/youtube.png";
 import facebook from "../../assets/facebook.png";
 import instagram from "../../assets/instagram.png";
+import FormContact from "../../components/FormContact";
+
 ---
 
 <article
@@ -25,30 +27,7 @@ import instagram from "../../assets/instagram.png";
       src="https://maps.google.com/maps?q=Carrera%2014%20%23%2015-80%2C%20Sogamoso%2CColombia&t=m&z=18&output=embed&iwloc=near"
       title="Carrera 14 # 15-80, Sogamoso,Colombia"
       aria-label="Carrera 14 # 15-80, Sogamoso,Colombia"></iframe>
-    <form class="flex flex-col h-[500px] w-full gap-[10px]">
-      <label for="user-email">Tu correo: </label>
-      <input type="email" name="user-email" />
-      <label for="services">¿Quieres cotizar algun servicio?</label>
-      <select name="services">
-        <option value="NA">------------------</option>
-        <option value="ing-geo">Ingeniería Geotécnica</option>
-        <option value="ing-ro">Ingenierpia de Rocas</option>
-        <option value="geo">Geología</option>
-        <option value="top">Topografía</option>
-        <option value="lab-ing">Laboratorios de Ingeniería</option>
-        <option value="agu-po">Aguas Subterráneas y Pozos profundos</option>
-        <option value="ing-via">Ingeniería Vial</option>
-        <option value="ing-hi">Ingeniería Hidráulica</option>
-        <option value="ing-es">Ingeniería Estructural</option>
-        <option value="geomatica">Geomática</option>
-        <option value="obras-civi">Obras Civiles</option>
-      </select>
-      <label for="subject">¿Cómo podemos ayudarte?</label>
-      <input type="text" name="subject" />
-      <label for="details">Brindanos más detalles</label>
-      <textarea name="details"></textarea>
-      <button>Enviar</button>
-    </form>
+      <FormContact client:load />
   </section>
   <footer class="w-full">
     <section
@@ -153,41 +132,6 @@ import instagram from "../../assets/instagram.png";
     color: #091b49;
     letter-spacing: 12px;
     text-shadow: 0px 0px 10px #908f95;
-  }
-
-  .contact-form form {
-    display: flex;
-    flex-direction: column;
-    height: 350px;
-    width: 100%;
-  }
-
-  form input,
-  form select,
-  form textarea {
-    color: #666;
-    padding: 0.75em;
-    height: auto;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #eaeaea;
-    border-radius: 2px;
-    background: #ffffff;
-    box-shadow: none;
-    box-sizing: border-box;
-    transition: all 0.2s linear;
-  }
-
-  form button {
-    background-color: #0170b9;
-    border-radius: 2px;
-    border: 0;
-    float: none;
-    height: auto;
-    margin: 0;
-    padding: 10px 20px;
-    width: auto;
-    color: white;
   }
 
   .footer-location ul li {

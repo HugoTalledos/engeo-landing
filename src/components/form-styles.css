@@ -1,0 +1,46 @@
+.contact-form #contact-us-form {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 100%;
+  }
+
+  #contact-us-form input,
+  #contact-us-form select,
+  #contact-us-form textarea {
+    color: #666;
+    padding: 0.75em;
+    height: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eaeaea;
+    border-radius: 2px;
+    background: #ffffff;
+    box-shadow: none;
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+  }
+
+  #contact-us-form button {
+    background-color: #0170b9;
+    border-radius: 2px;
+    border: 0;
+    float: none;
+    height: auto;
+    margin: 0;
+    padding: 10px 20px;
+    width: auto;
+    color: white;
+  }
+
+.error-message {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
