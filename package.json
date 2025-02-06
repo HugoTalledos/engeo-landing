@@ -15,6 +15,7 @@
     "firebase": "^11.2.0",
     "firebase-tools": "^13.29.3",
     "flowbite": "^3.0.0",
+    "intersection-observer": "^0.12.2",
     "preact": "^10.25.4",
     "tailwindcss": "^3.4.17"
   }

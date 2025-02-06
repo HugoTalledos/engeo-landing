@@ -3,7 +3,7 @@ import youtube from "../../assets/youtube.png";
 import facebook from "../../assets/facebook.png";
 import instagram from "../../assets/instagram.png";
 import FormContact from "../../components/FormContact";
-
+import { Image } from "astro:assets";
 ---
 
 <article
@@ -18,17 +18,13 @@ import FormContact from "../../components/FormContact";
   <section
     class="flex flex-col md:flex-row w-full gap-[20px] justify-center items-center"
   >
-    <iframe
+    <div
+      id="mapFrame"
       class="w-full h-[350px]"
-      frameborder="0"
-      scrolling="no"
-      marginheight="0"
-      marginwidth="0"
-      src="https://maps.google.com/maps?q=Carrera%2014%20%23%2015-80%2C%20Sogamoso%2CColombia&t=m&z=18&output=embed&iwloc=near"
-      title="Carrera 14 # 15-80, Sogamoso,Colombia"
-      loading="lazy"
-      aria-label="Carrera 14 # 15-80, Sogamoso,Colombia"></iframe>
-      <FormContact client:load />
+      data-src="https://maps.google.com/maps?q=Carrera%2014%20%23%2015-80%2C%20Sogamoso%2CColombia&t=m&z=18&output=embed&iwloc=near"
+    >
+    </div>
+    <FormContact client:visible />
   </section>
   <footer class="w-full">
     <section
@@ -94,17 +90,34 @@ import FormContact from "../../components/FormContact";
           href="https://www.facebook.com/ENGEO-Ingenieria-y-Geociencias-107641734268730"
           target="_blank"
         >
-          <img src={facebook.src} alt="logo-facebook" loading="lazy" />
+          <Image
+            src={facebook}
+            alt="logo-facebook"
+            inferSize={true}
+            loading="lazy"
+          />
         </a>
         <a href="https://youtube.com" target="_blank">
-          <img src={youtube.src} alt="logo youtube" loading="lazy"/>
+          <Image
+            src={youtube}
+            alt="logo youtube"
+            loading="lazy"
+            inferSize={true}
+          />
         </a>
         <a href="https://instagram.com" target="_blank">
-          <img src={instagram.src} alt="logo instagram" loading="lazy"/>
+          <Image
+            src={instagram}
+            alt="logo instagram"
+            loading="lazy"
+            inferSize={true}
+          />
         </a>
       </div>
     </section>
-    <section class="flex flex-row p-3 justify-center items-center gap-[5px] acknowledgements text-xs">
+    <section
+      class="flex flex-row p-3 justify-center items-center gap-[5px] acknowledgements text-xs"
+    >
       <a
         href="https://www.flaticon.es/iconos-gratis/logotipo-de-instagram"
         title="logotipo de instagram iconos"
@@ -124,7 +137,7 @@ import FormContact from "../../components/FormContact";
         target="_blank"
         >Youtube iconos creados por Md Tanvirul Haque - Flaticon</a
       >
-      <a 
+      <a
         href="https://www.flaticon.es/iconos-gratis/whatsapp"
         title="whatsapp iconos"
         target="_blank"
@@ -134,6 +147,27 @@ import FormContact from "../../components/FormContact";
     </section>
   </footer>
 </article>
+
+<script>
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const iframe = document.createElement("iframe");
+        iframe.src = entry.target.dataset.src;
+        iframe.title = "Carrera 14 # 15-80, Sogamoso,Colombia";
+        iframe.ariaLabel = "Carrera 14 # 15-80, Sogamoso,Colombia";
+        iframe.setAttribute("class", "w-full h-[350px]");
+        entry.target.appendChild(iframe);
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  const element = document.getElementById("mapFrame");
+  if (element) {
+    observer.observe(element);
+  }
+</script>
 
 <style>
   #contacto h1 {
