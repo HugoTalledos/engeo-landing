@@ -1,4 +1,5 @@
 ---
+import Image from "astro/components/Image.astro";
 import { getEntry } from "astro:content";
 
 const homeImages = await getEntry("inicio", "inicio");
@@ -24,7 +25,7 @@ const { data } = homeImages;
     {
       data.inicioClientes.map((cliente, idx) => (
         <picture>
-          <img src={cliente} alt={`Cliente engeo ${idx}`} loading="lazy"/>
+          <Image inferSize={true} src={cliente} alt={`Cliente engeo ${idx}`} loading="lazy"/>
         </picture>
       ))
     }
@@ -39,7 +40,8 @@ const { data } = homeImages;
       {
         data.inicioClientes.map((image, idx) => (
           <div class="hidden duration-500 ease-in-out" data-carousel-item>
-            <img
+            <Image
+              inferSize={true}
               src={image}
               class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               alt={`carusel clientes - imagen ${idx}`}

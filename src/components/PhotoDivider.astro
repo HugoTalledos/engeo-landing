@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import { getEntry } from "astro:content";
 
 const homeImages = await getEntry("inicio", "inicio");
@@ -13,15 +14,20 @@ const { data } = homeImages;
 <article id="photo-divider" class="relative w-full h-[296px] overflow-hidden">
   <div class="overlay"></div>
   <picture class="absolute w-full h-full z-[1] container-image">
-    <img
+    <Image
+      inferSize={true}
       src={data.inicioHeader[1]}
       class="w-full h-full object-cover"
       loading="lazy"
       alt="engeo-imagen-division"
     />
   </picture>
-  <section class="absolute flex flex-col justify-center items-center gap-[20px] m-auto w-full h-full z-[3] p-2">
-    <h1 class="mb-4 text-lg text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl text-white">
+  <section
+    class="absolute flex flex-col justify-center items-center gap-[20px] m-auto w-full h-full z-[3] p-2"
+  >
+    <h1
+      class="mb-4 text-lg text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl text-white"
+    >
       EL DESCUBRIMIENTO TEMPRANO EVITA INCÓGNITAS COSTOSAS
     </h1>
     <p class="text-white text-justify text-sm md:text-base">

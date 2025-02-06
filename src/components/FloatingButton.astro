@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import whatsapp from "../assets/social.png";
 
 
@@ -20,10 +21,13 @@ const message = page === "Ingeniería y Geociencias"
   style="background-color: #25d366;"
 >
   <figure class="w-[70px] h-[70px] overflow-hidden">
-    <img
+    <Image
+      height="70"
+      width="70"
       class="w-full h-full object-contain"
-      src={whatsapp.src}
+      src={whatsapp}
       alt="boton whatsapp engeo"
+      loading="eager"
     />
   </figure>
   <p class="hidden group-hover:block text-white font-bold">Nuestro Whatsapp</p>

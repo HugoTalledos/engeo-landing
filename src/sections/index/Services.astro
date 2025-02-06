@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import { getEntry } from "astro:content";
 
 const homeImages = await getEntry("inicio", "inicio");
@@ -28,7 +29,8 @@ const { data } = homeImages;
         {
           data.inicioServiciosSlider.map((image, idx) => (
             <div class="hidden duration-500 ease-in-out" data-carousel-item>
-              <img
+              <Image 
+                inferSize={true}
                 src={image}
                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
                 alt={`carusel servicios uno - imagen ${idx}`}
@@ -54,7 +56,8 @@ const { data } = homeImages;
         {
           data.inicioServiciosSliderDos.map((image, idx) => (
             <div class="hidden duration-500 ease-in-out" data-carousel-item>
-              <img
+              <Image
+                inferSize={true}
                 src={image}
                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
                 alt={`carusel servicios dos - imagen ${idx}`}
@@ -85,7 +88,8 @@ const { data } = homeImages;
           {
             data.inicioServiciosSliderTres.map((image, idx) => (
               <div class="hidden duration-500 ease-in-out" data-carousel-item>
-                <img
+                <Image
+                  inferSize={true}
                   src={image}
                   class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
                   alt={`carusel servicios tres - imagen ${idx}`}
