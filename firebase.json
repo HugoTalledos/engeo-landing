@@ -1,5 +1,13 @@
 {
   "hosting": {
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|png|webp)",
+        "headers": [
+          { "key": "Cache-Control", "value": "max-age=31536000, public" }
+        ]
+      }
+    ],
     "public": "dist",
     "ignore": [
       "firebase.json",
