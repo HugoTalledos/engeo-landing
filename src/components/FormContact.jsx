@@ -5,7 +5,7 @@ import { useState } from "preact/hooks";
 import './form-styles.css';
 
 const FormContact = () => {
-  const [error, setError] = useState('');
+  const [error, setError] = useState(false);
   const [message, setMessage] = useState('');
   const email = createRef();
   const service = createRef();
@@ -58,7 +58,9 @@ const FormContact = () => {
     } catch (e) {
       setError(true);
       setMessage("Error inesperado, intente más tarde");
-    } 
+    }  finally {
+      setTimeout(() => setMessage(''), 3000);
+    }
   }
 
   return(
@@ -85,7 +87,7 @@ const FormContact = () => {
       <label for="details">Brindanos más detalles</label>
       <textarea name="details" ref={details} required></textarea>
       <button type="submit">Enviar</button>
-      <p class={error ? 'error-message' : 'successmessage'}>{ message }</p>
+      <p class={error ? 'error-message' : 'success-message'}>{ message }</p>
     </form>
   );
 };

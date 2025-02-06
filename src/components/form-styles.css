@@ -37,10 +37,12 @@
     color: red;
     text-align: center;
     font-weight: bold;
+    font-size: small;
 }
 
 .success-message {
     color: green;
     font-weight: bold;
     text-align: center;
+    font-size: small;
 }
