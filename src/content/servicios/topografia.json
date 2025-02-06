@@ -9,9 +9,9 @@
         {
             "title": "Ingeniería Civil",
             "images": [
-                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/topografia%2Fslider1%2Fimage_1.jpg?generation=1737825012311726&alt=media",
-                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/topografia%2Fslider1%2Fimage_2.jpg?generation=1737825012263944&alt=media"
-              ],
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/topografia%2Fslider1%2Fimage_1.webp?generation=1738863841897122&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/topografia%2Fslider1%2Fimage_2.webp?generation=1738863841728441&alt=media"
+            ],
             "content": [
                 {
                     "title": "LEVANTAMIENTO DE VÍAS Y TÚNELES."
@@ -32,11 +32,11 @@
         },
         {
             "title": "Minería",
-            "images":  [
-                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/topografia%2Fslider2%2Fimage_3.jpg?generation=1737825019077383&alt=media",
-                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/topografia%2Fslider2%2Fimage_4.jpg?generation=1737825019070571&alt=media"
-              ],
-           "content": [
+            "images": [
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/topografia%2Fslider2%2Fimage_3.webp?generation=1738863851513001&alt=media",
+                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/topografia%2Fslider2%2Fimage_4.webp?generation=1738863851675691&alt=media"
+            ],
+            "content": [
                 {
                     "title": "LEVANTAMIENTO TOPOGRÁFICO SUPERFICIAL."
                 },
