@@ -1,8 +1,14 @@
 ---
 import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
 import { getEntry } from "astro:content";
 
 const homeImages = await getEntry('inicio', 'inicio');
+
+const services: CollectionEntry<'servicios'>[] = await getCollection('servicios')
+services.sort((a, b) => a.data.order - b.data.order)
+
 
 if (!homeImages) {
   throw new Error('Could not find blog post 1');
@@ -38,39 +44,13 @@ const { data } = homeImages;
           <!-- Dropdown menu -->
           <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
             <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
-              <li>
-                <a href="/servicios/ingenieria-geotecnica" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Ingeniería Geotécnica</a>
-              </li>
-              <li>
-                <a href="/servicios/ingenieria-de-rocas" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Ingeniería de Rocas</a>
-              </li>
-              <li>
-                <a href="/servicios/geologia" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Geología</a>
-              </li>
-              <li>
-                <a href="/servicios/topografia" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Topografía</a>
-              </li>
-              <li>
-                <a href="/servicios/laboratorios-de-ingenieria" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Laboratorios de Ingeniería</a>
-              </li>
-              <li>
-                <a href="/servicios/aguas-pozos" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Aguas Subterráneas y Pozos Profundos</a>
-              </li>
-              <li>
-                <a href="/servicios/ingenieria-vial" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Ingeniería Vial</a>
-              </li>
-              <li>
-                <a href="/servicios/ingenieria-hidraulica" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Ingeniería Hidráulica</a>
-              </li>
-              <li>
-                <a href="/servicios/ingenieria-estructural" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Ingeniería de Estructural</a>
-              </li>
-              <li>
-                <a href="/servicios/geomatica" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Geomática</a>
-              </li>
-              <li>
-                <a href="/servicios/obras-civiles" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Obras Civiles</a>
-              </li>
+              {
+                services.map(service => 
+                  (<li>
+                    <a href={`/servicios/${service.data.slug}`} class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">{ service.data.title }</a>
+                  </li>)
+                )
+              }
             </ul>
           </div>
         </li>
