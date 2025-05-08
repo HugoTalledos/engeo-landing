@@ -1,5 +1,6 @@
 {
     "slug": "ingenieria-geotecnica",
+    "order": 6,
     "title": "Ingeniería Geotécnica",
     "description": "La evaluación exhaustiva de las condiciones del subsuelo y la aplicación de principios sólidos de conocimiento y experiencia en ingeniería geotécnica brindan a los clientes soluciones prácticas y rentables.",
     "header": [
@@ -7,7 +8,10 @@
         "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fheader%2Fheader-2.webp?generation=1738863132186751&alt=media",
         "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fheader%2Fheader-3.webp?generation=1738863132410945&alt=media"
     ],
-    "additionalData": {},
+    "additionalData": {
+        "slogan": "Diseño y construcción de estructuras de contención. Más de 10 años liderando la ingeniería de alta calidad",
+        "image": "https://storage.googleapis.com/landing-engeo.firebasestorage.app/ingenieria-geotecnica/10anios.png"
+    },
     "sections": [
         {
             "title": "Servicios",
@@ -59,9 +63,6 @@
                 "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/ingenieria-geotecnica%2Fslider2%2Fslider-9.webp?generation=1738863218305025&alt=media"
             ],
             "content": [
-                {
-                    "title": "Estudios geotécnicos de suelos y fundaciones para edificaciones, construcciones y en general todo tipo de infraestructura: (vial, industrial, eléctrica, ambiental, oil & gas)."
-                },
                 {
                     "title": "Diseño, análisis y optimización de cimentaciones superficiales y profundas."
                 },
