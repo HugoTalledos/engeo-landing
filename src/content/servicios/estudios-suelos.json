@@ -4,53 +4,52 @@
     "title": "Estudios de suelos",
     "description": "Estudios geotécnicos de suelos y fundaciones para edificaciones y construcciones de acuerdo al REGLAMENTO COLOMBIANO DE CONSTRUCCIÓN SISMO RESISTENTE (NSR-10), y en general todo tipo de infraestructura : urbanística, vial, industrial, eléctrica, ambiental, Oil & gas.",
     "header": [
-        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/agua-pozos%2Fheader%2F20141219_161434-1.webp?generation=1738862639095530&alt=media",
-        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/agua-pozos%2Fheader%2FIMG-20180413-WA0038-1.webp?generation=1738862638795171&alt=media",
-        "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/agua-pozos%2Fheader%2FPOZO-CHIQUINQUIRA-2016-1.webp?generation=1738862639371981&alt=media"
+        "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/header/suelo12.jpeg",
+        "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/header/suelos11.jpeg",
+        "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/header/suelos3.png",
+        "https://storage.cloud.google.com/landing-engeo.firebasestorage.app/estudios-suelos/header/suelos5.jpeg"
     ],
     "additionalData": {},
     "sections": [
         {
-            "title": "Servicios",
-            "images": [],
-            "video": "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/agua-pozos%2FMi-video-1.mp4?generation=1737825427079778&alt=media",
+            "title": "Tipos de infraestructura",
+            "images": [
+                "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/slider1/suelos1.png",
+                "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/slider1/suelos2.png",
+                "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/slider1/suelos4.jpeg",
+                "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/slider1/suelos6.jpeg"
+            ],
+            "video": "",
             "content": [
                 {
-                    "title": "REGISTRO GEOFÍSICO DE POZOS",
-                    "content": "<p>Registro geofísico de pozos.</p>"
+                    "title": "Urbanística"
                 },
                 {
-                    "title": "DISEÑO Y PERFORACIÓN DE POZOS PROFUNDOS",
-                    "content": "<p>Evaluamos las condiciones geológicas, ambientales y las especificaciones del cliente con el fin de obtener la solución que mejor se adapte a sus necesidades. </p>"
+                    "title": "Vial"
                 },
                 {
-                    "title": "MANTENIMIENTO Y RECUPERACIÓN DE POZOS PROFUNDOS",
-                    "content": "<p>Cuidamos de sus pozos profundos por medio de un mantenimiento físico y químico que prolongue la vida útil de su pozo.</p>"
+                    "title": "Industrial"
                 }
             ]
         },
         {
             "title": "",
             "images": [
-                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/agua-pozos%2Fslider1%2Fimage_1.webp?generation=1738862681780916&alt=media",
-                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/agua-pozos%2Fslider1%2Fimage_2.webp?generation=1738862682117277&alt=media",
-                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/agua-pozos%2Fslider1%2Fimage_3.webp?generation=1738862682381465&alt=media",
-                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/agua-pozos%2Fslider1%2Fimage_4.webp?generation=1738862682913476&alt=media",
-                "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/agua-pozos%2Fslider1%2Fimage_5.webp?generation=1738862682864974&alt=media"
+                "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/slider2/suelos10.jpeg",
+                "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/slider2/suelos7.png",
+                "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/slider2/suelos8.png",
+                "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/slider2/suelos9.png"
             ],
             "video": "",
             "content": [
                 {
-                    "title": "TOMAS DE VÍDEOS DE POZOS PROFUNDOS",
-                    "content": "<p>Tomas de vídeos de pozos profundos.</p>"
+                    "title": "Eléctrica"
                 },
                 {
-                    "title": "ESTUDIOS HIDROGEOLÓGICOS",
-                    "content": "<p>Buscamos y evaluamos la mejor opción para el abastecimiento de agua por medio de estudios que permiten conocer las características del subsuelo.</p>"
+                    "title": "Ambiental"
                 },
                 {
-                    "title": "PRUEBAS DE BOMBEO",
-                    "content": "<p>Pruebas de bombeo.</p>"
+                    "title": "Oil & gas"
                 }
             ]
         }
