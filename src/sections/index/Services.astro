@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import { getEntry } from "astro:content";
 
-const homeImages = await getEntry("inicio", "inicio");
+const homeImages = (await getEntry("inicio", "inicio"));
 
 if (!homeImages) {
   throw new Error("Could not find blog post 1");
@@ -74,12 +74,14 @@ const { data } = homeImages;
     class="flex flex-col lg:flex-row justify-evenly items-center w-full gap-[30px] text-center"
   >
     <ul>
+      <li><a href="/servicios/estudios-suelos">Estudios de suelos</a></li>
       <li><a href="/servicios/ingenieria-geotecnica">Ingeniería Geotécnica</a></li>
       <li><a href="/servicios/ingenieria-de-rocas">Ingeniería de Rocas</a></li>
-      <li><a href="/servicios/geologia">Geología</a></li>
-      <li><a href="/servicios/mineria">Minería</a></li>
-      <li><a href="/servicios/topografia">Topografía</a></li>
-      <li><a href="/servicios/laboratorios-ingenieria">Laboratorios de Ingeniería</a></li>
+      <li><a href="/servicios/ingenieria-vial">Ingeniería Vial</a></li>
+      <li><a href="/servicios/ingenieria-estructural">Ingeniería Estructural</a></li>
+      <li><a href="/servicios/ingenieria-hidraulica">Ingeniería Hidráulica</a></li>
+      <li><a href="/servicios/obras-civiles">Obras Civiles</a></li>
+
     </ul>
     <div class="flex flex-col justify-content gap-[30px] w-full lg:w-[50%]">
       <div id="controls-carousel" class="relative w-full" data-carousel="slide">
@@ -103,12 +105,12 @@ const { data } = homeImages;
       <a class="button" href="/#contacto">COTIZAR</a>
     </div>
     <ul>
+      <li><a href="/servicios/ingenieria-de-rocas">Minería</a></li>
+      <li><a href="/servicios/geologia">Geología</a></li>
       <li><a href="/servicios/aguas-pozos">Aguas Subterráneas y Pozos Profundos</a></li>
-      <li><a href="/servicios/ingenieria-vial">Ingeniería Vial</a></li>
-      <li><a href="/servicios/ingenieria-hidraulica">Ingeniería Hidráulica</a></li>
-      <li><a href="/servicios/ingenieria-estructural">Ingeniería Estructural</a></li>
+      <li><a href="/servicios/topografia">Topografía</a></li>
       <li><a href="/servicios/geomatica">Geomática</a></li>
-      <li><a href="/servicios/obras-civiles">Obras Civiles</a></li>
+      <li><a href="/servicios/laboratorios-ingenieria">Laboratorios de Ingeniería</a></li>
     </ul>
   </section>
 </article>
