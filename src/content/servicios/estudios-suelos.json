@@ -2,7 +2,7 @@
     "slug": "estudios-suelos",
     "order": 1,
     "title": "Estudios de suelos",
-    "description": "Estudios geotécnicos de suelos y fundaciones para edificaciones y construcciones de acuerdo al REGLAMENTO COLOMBIANO DE CONSTRUCCIÓN SISMO RESISTENTE (NSR-10), y en general todo tipo de infraestructura : urbanística, vial, industrial, eléctrica, ambiental, Oil & gas.",
+    "description": "Estudios geotécnicos de suelos y fundaciones para edificaciones y construcciones de acuerdo al <b>REGLAMENTO COLOMBIANO DE CONSTRUCCIÓN SISMO RESISTENTE (NSR-10)</b>, y en general todo tipo de infraestructura: urbanística, vial, industrial, eléctrica, ambiental, Oil & gas.",
     "header": [
         "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/header/suelo12.jpeg",
         "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/header/suelos11.jpeg",
@@ -12,46 +12,26 @@
     "additionalData": {},
     "sections": [
         {
-            "title": "Tipos de infraestructura",
+            "title": "",
             "images": [
                 "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/slider1/suelos1.png",
                 "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/slider1/suelos2.png",
                 "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/slider1/suelos4.jpeg",
-                "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/slider1/suelos6.jpeg"
-            ],
-            "video": "",
-            "content": [
-                {
-                    "title": "Urbanística"
-                },
-                {
-                    "title": "Vial"
-                },
-                {
-                    "title": "Industrial"
-                }
-            ]
-        },
-        {
-            "title": "",
-            "images": [
+                "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/slider1/suelos6.jpeg",
                 "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/slider2/suelos10.jpeg",
                 "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/slider2/suelos7.png",
                 "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/slider2/suelos8.png",
                 "https://storage.googleapis.com/landing-engeo.firebasestorage.app/estudios-suelos/slider2/suelos9.png"
             ],
             "video": "",
-            "content": [
-                {
-                    "title": "Eléctrica"
-                },
-                {
-                    "title": "Ambiental"
-                },
-                {
-                    "title": "Oil & gas"
-                }
-            ]
+            "content": []
+        },
+        {
+            "title": "",
+            "images": [
+            ],
+            "video": "",
+            "content": []
         }
     ]
 }
