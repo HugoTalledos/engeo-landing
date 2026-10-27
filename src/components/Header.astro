@@ -60,7 +60,7 @@ const { data } = homeImages;
               {
                 services.map(service => 
                   (<li>
-                    <a href={`/servicios/${service.data.slug}`} class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">{ service.data.title }</a>
+                    <a href={`/servicios/${service.data.slug}/`} class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">{ service.data.title }</a>
                   </li>)
                 )
               }
