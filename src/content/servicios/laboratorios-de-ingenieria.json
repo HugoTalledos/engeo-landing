@@ -55,26 +55,7 @@
                 "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider3%2Fimage_17.webp?generation=1738863673975759&alt=media",
                 "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider3%2Fimage_18.webp?generation=1738863674663473&alt=media"
             ],
-            "content": [
-                {
-                    "title": "COMPRESIÓN UNIAXIAL EN ROCAS."
-                },
-                {
-                    "title": "ÍNDICE DE CARGA PUNTUAL EN ROCAS."
-                },
-                {
-                    "title": "TRACCIÓN INDIRECTA EN ROCAS."
-                },
-                {
-                    "title": "PESO UNITARIO EN ROCAS."
-                },
-                {
-                    "title": "GRADACIÓN."
-                },
-                {
-                    "title": "CORTE Y REFRENTADO DE CARAS SOBRE ESPECÍMENES (ROCAS, CONCRETOS Y MORTEROS)."
-                }
-            ]
+            "content": []
         }
     ]
 }
