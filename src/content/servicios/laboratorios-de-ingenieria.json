@@ -23,21 +23,13 @@
                 "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider1%2Fimage_5.webp?generation=1738863654663251&alt=media"
             ],
             "content": [
-                {
-                    "title": "LÍMITES DE CONSISTENCIA (ATTERBERG)."
-                },
-                {
-                    "title": "PESO ESPECÍFICO DE SÓLIDOS."
-                },
-                {
-                    "title": "PESO UNITARIO."
-                },
-                {
-                    "title": "HUMEDAD NATURAL."
-                },
-                {
-                    "title": "GRANULOMETRÍA (LAVADO Y TAMIZADO)."
-                }
+                { "title": "Pruebas y ensayos de laboratorio para el control de calidad en obras y proyectos de ingeniería." },
+                { "title": "Suelos" },
+                { "title": "Rocas" },
+                { "title": "Agregados" },
+                { "title": "Concretos" },
+                { "title": "Materiales de Construcción" },
+                { "title": "Pavimentos" }
             ]
         },
         {
@@ -49,21 +41,6 @@
                 "https://storage.googleapis.com/download/storage/v1/b/landing-engeo.firebasestorage.app/o/laboratorios-de-ingenieria%2Fslider2%2Fimage_9.webp?generation=1738863662907487&alt=media"
             ],
             "content": [
-                {
-                    "title": "POTENCIAL DE EXPANSIÓN."
-                },
-                {
-                    "title": "EXPANSIÓN LIBRE Y CONTROLADA."
-                },
-                {
-                    "title": "CONSOLIDACIÓN UNIDIMENSIONAL."
-                },
-                {
-                    "title": "CORTE DIRECTO."
-                },
-                {
-                    "title": "EXTRACCIÓN DE NÚCLEOS DE ROCAS, CONCRETOS Y MORTEROS."
-                }
             ]
         },
         {
