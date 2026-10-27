@@ -15,14 +15,8 @@ import FormContact from "../../components/FormContact";
     CONTÁCTENOS
   </h1>
   <section
-    class="flex flex-col md:flex-row w-full gap-[20px] justify-center items-center"
+    class="flex flex-col md:flex-row w-[70%] gap-[20px] justify-center items-center m-auto"
   >
-    <div
-      id="mapFrame"
-      class="w-full h-[350px]"
-      data-src="https://maps.google.com/maps?q=Carrera%2014%20%23%2015-80%2C%20Sogamoso%2CColombia&t=m&z=18&output=embed&iwloc=near"
-    >
-    </div>
     <FormContact client:visible />
   </section>
   <footer class="w-full">
@@ -37,13 +31,10 @@ import FormContact from "../../components/FormContact";
         </h2>
         <ul>
           <li>
-            <p>Carrera 14 # 15-80</p>
-            <p>Edificio Torres de Alcalá, Oficina 201</p>
-            <p>Sogamoso – Boyacá</p>
+            <p>Bogotá - Colombia</p>
           </li>
           <li>
-            <p>Carrera 74 #163-74 Interior 10, Oficina 201</p>
-            <p>Bogotá D.C</p>
+            <p>Sogamoso – Colombia</p>
           </li>
         </ul>
       </div>
@@ -71,7 +62,11 @@ import FormContact from "../../components/FormContact";
         </section>
       </section>
       <div>
-        <h2>Horarios</h2>
+        <h2
+          class="mb-4 text-2xl text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-4xl"
+        >
+          Horarios
+        </h2>
         <p>Lunes – Viernes: 6:00 am – 8:00 pm</p>
         <p>Sábado – Domingo: 8:00 am – 4:00 pm</p>
       </div>
@@ -143,27 +138,6 @@ import FormContact from "../../components/FormContact";
     </section>
   </footer>
 </article>
-
-<script>
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const iframe = document.createElement("iframe");
-        iframe.src = entry.target.dataset.src;
-        iframe.title = "Carrera 14 # 15-80, Sogamoso,Colombia";
-        iframe.ariaLabel = "Carrera 14 # 15-80, Sogamoso,Colombia";
-        iframe.setAttribute("class", "w-full h-[350px]");
-        entry.target.appendChild(iframe);
-        observer.unobserve(entry.target);
-      }
-    });
-  });
-
-  const element = document.getElementById("mapFrame");
-  if (element) {
-    observer.observe(element);
-  }
-</script>
 
 <style>
   #contacto h1 {
