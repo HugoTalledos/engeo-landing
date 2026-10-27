@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@astrojs/preact": "^4.0.3",
+    "@astrojs/sitemap": "^3.7.3",
     "@astrojs/tailwind": "^5.1.5",
     "astro": "^5.1.8",
     "firebase": "^11.2.0",
