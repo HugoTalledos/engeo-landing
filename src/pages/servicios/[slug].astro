@@ -13,9 +13,41 @@ export async function getStaticPaths() {
 
 const { service } = Astro.props;
 const { data } = service;
+const pageUrl = new URL(`/servicios/${data.slug}/`, Astro.site).href;
+const siteUrl = new URL("/", Astro.site).href;
+const offered = data.sections.flatMap((section) => section.content.map((fragment) => fragment.title)).filter(Boolean);
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: data.title,
+    serviceType: data.title,
+    description: data.seoDescription,
+    url: pageUrl,
+    areaServed: "Colombia",
+    provider: { "@id": `${siteUrl}#organizacion` },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: `Servicios de ${data.title}`,
+      itemListElement: offered.map((name) => ({
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name },
+      })),
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Inicio", item: siteUrl },
+      { "@type": "ListItem", position: 2, name: data.title, item: pageUrl },
+    ],
+  },
+];
 ---
 
-<Layout title={data.title}>
+<Layout title={`${data.title} en Colombia`} description={data.seoDescription} service={data.title} image={data.header[0]} jsonLd={jsonLd}>
   <header class="relative w-full h-56 md:h-[490px] overflow-hidden">
     <div class="absolute w-full h-56 z-[2] md:h-[490px] overlay"></div>
     <div
@@ -52,7 +84,7 @@ const { data } = service;
                 <img
                   src={image}
                   class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
-                  alt={`carusel ${data.title} uno - imagen ${id}`}
+                  alt={`${data.title} - proyecto de ENGEO, foto ${id + 1}`}
                   loading="lazy"
                 />
               </div>
@@ -72,7 +104,7 @@ const { data } = service;
           <img
             src={data.additionalData.image}
             class="w-full h-full object-contain"
-            alt="Logo onac"
+            alt="Acreditación ONAC de ENGEO"
             loading="lazy"
           />
         </picture>
@@ -82,11 +114,13 @@ const { data } = service;
   {
     data.sections.map((section, sectionIdx) => (
       <div class="flex flex-col  py-2 px-4 w-full box-border">
-        <h1
-          class={`${sectionIdx % 2 == 0 ? "" : "md:text-start"} mb-4 text-xl text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl section-title py-5`}
-        >
-          {section.title}
-        </h1>
+        {section.title && (
+          <h2
+            class={`${sectionIdx % 2 == 0 ? "" : "md:text-start"} mb-4 text-xl text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl section-title py-5`}
+          >
+            {section.title}
+          </h2>
+        )}
         <div
           class={`flex flex-col md:flex-row gap-[15px] justify-start ${sectionIdx % 2 == 0 ? "" : "md:flex-row-reverse"}`}
         >
@@ -105,7 +139,7 @@ const { data } = service;
                     <img
                       src={image}
                       class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
-                      alt={`carusel servicios ${sectionIdx} ${data.title} - imagen ${id}`}
+                      alt={`${section.title || data.title} - trabajo de ENGEO, foto ${id + 1}`}
                       loading="lazy"
                     />
                   </div>
@@ -133,7 +167,7 @@ const { data } = service;
                     {
                       fragment.content
                       ? (<>
-                        <h2 id={`title-${sectionIdx}-${idx}`}>
+                        <h3 id={`title-${sectionIdx}-${idx}`}>
                           <button 
                             type="button"
                             class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
@@ -146,7 +180,7 @@ const { data } = service;
                               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
                             </svg>
                           </button>
-                        </h2>
+                        </h3>
                         <div
                           id={`section-${sectionIdx}-${idx}`}
                           class="hidden"
@@ -158,13 +192,13 @@ const { data } = service;
                         </div>
                       </>)
                       : (<>
-                      <h2 id={`title-${sectionIdx}-${idx}`}>
+                      <h3 id={`title-${sectionIdx}-${idx}`}>
                           <span 
                             class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
                           >
                             <span>{ fragment.title }</span>
                           </span>
-                        </h2>
+                        </h3>
                       </>)
                     }
                   </>
@@ -178,7 +212,7 @@ const { data } = service;
   }
 
   <div class="call-to-action">
-    <a href="/#contacto">Realiza tu cotización</a>
+    <a href="/#contacto">Realiza tu cotización de {data.title}</a>
   </div>
 </Layout>
 
