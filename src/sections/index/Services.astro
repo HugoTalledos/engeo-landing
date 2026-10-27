@@ -15,11 +15,11 @@ const { data } = homeImages;
   id="services"
   class="flex flex-col justify-center items-center gap-[1.5em] bg-white px-10 md:px-[9em] md:px-10 pb-8"
 >
-  <h1
+  <h2
     class="mb-4 text-lg text-center lg:text-left font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl text-pretty"
   >
     NUESTROS SERVICIOS
-  </h1>
+  </h2>
   <section
     class="flex flex-col lg:flex-row justify-evenly gap-[30px] text-justify"
   >
@@ -33,7 +33,7 @@ const { data } = homeImages;
                 inferSize={true}
                 src={image}
                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
-                alt={`carusel servicios uno - imagen ${idx}`}
+                alt={`ENGEO: proyectos de ingeniería geotécnica - foto ${idx + 1}`}
                 loading="lazy"
               />
             </div>
@@ -60,7 +60,7 @@ const { data } = homeImages;
                 inferSize={true}
                 src={image}
                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
-                alt={`carusel servicios dos - imagen ${idx}`}
+                alt={`ENGEO: trabajos de exploración y laboratorio - foto ${idx + 1}`}
                 loading="lazy"
               />
             </div>
@@ -74,13 +74,13 @@ const { data } = homeImages;
     class="flex flex-col lg:flex-row justify-evenly items-center w-full gap-[30px] text-center"
   >
     <ul>
-      <li><a href="/servicios/estudios-suelos">Estudios de suelos</a></li>
-      <li><a href="/servicios/ingenieria-geotecnica">Ingeniería Geotécnica</a></li>
-      <li><a href="/servicios/ingenieria-de-rocas">Ingeniería de Rocas</a></li>
-      <li><a href="/servicios/ingenieria-vial">Ingeniería Vial</a></li>
-      <li><a href="/servicios/ingenieria-estructural">Ingeniería Estructural</a></li>
-      <li><a href="/servicios/ingenieria-hidraulica">Ingeniería Hidráulica</a></li>
-      <li><a href="/servicios/obras-civiles">Obras Civiles</a></li>
+      <li><a href="/servicios/estudios-suelos/">Estudios de suelos</a></li>
+      <li><a href="/servicios/ingenieria-geotecnica/">Ingeniería Geotécnica</a></li>
+      <li><a href="/servicios/ingenieria-de-rocas/">Ingeniería de Rocas</a></li>
+      <li><a href="/servicios/ingenieria-vial/">Ingeniería Vial</a></li>
+      <li><a href="/servicios/ingenieria-estructural/">Ingeniería Estructural</a></li>
+      <li><a href="/servicios/ingenieria-hidraulica/">Ingeniería Hidráulica</a></li>
+      <li><a href="/servicios/obras-civiles/">Obras Civiles</a></li>
 
     </ul>
     <div class="flex flex-col justify-content gap-[30px] w-full lg:w-[50%]">
@@ -94,7 +94,7 @@ const { data } = homeImages;
                   inferSize={true}
                   src={image}
                   class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
-                  alt={`carusel servicios tres - imagen ${idx}`}
+                  alt={`ENGEO: obras y servicios de ingeniería - foto ${idx + 1}`}
                   loading="lazy"
                 />
               </div>
@@ -105,17 +105,17 @@ const { data } = homeImages;
       <a class="button" href="/#contacto">COTIZAR</a>
     </div>
     <ul>
-      <li><a href="/servicios/ingenieria-de-rocas">Minería</a></li>
-      <li><a href="/servicios/geologia">Geología</a></li>
-      <li><a href="/servicios/aguas-pozos">Aguas Subterráneas y Pozos Profundos</a></li>
-      <li><a href="/servicios/topografia">Topografía</a></li>
-      <li><a href="/servicios/geomatica">Geomática</a></li>
-      <li><a href="/servicios/laboratorios-ingenieria">Laboratorios de Ingeniería</a></li>
+      <li><a href="/servicios/ingenieria-de-rocas/">Minería</a></li>
+      <li><a href="/servicios/geologia/">Geología</a></li>
+      <li><a href="/servicios/aguas-pozos/">Aguas Subterráneas y Pozos Profundos</a></li>
+      <li><a href="/servicios/topografia/">Topografía</a></li>
+      <li><a href="/servicios/geomatica/">Geomática</a></li>
+      <li><a href="/servicios/laboratorios-de-ingenieria/">Laboratorios de Ingeniería</a></li>
     </ul>
   </section>
 </article>
 <style>
-  #services h1 {
+  #services h2 {
     color: #091b49;
     letter-spacing: 12px;
     text-shadow: 0px 0px 10px #908f95;
