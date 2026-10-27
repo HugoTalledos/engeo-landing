@@ -16,16 +16,16 @@ const { data } = homeImages;
   class="flex flex-col justify-center items-center px-10 md:px-[9em] md:px-10"
 >
   <span class="dots-divider"></span>
-  <h1
+  <h2
     class="mb-4 text-lg text-center lg:text-left font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl text-pretty"
   >
     ALGUNOS DE NUESTROS CLIENTES
-  </h1>
+  </h2>
   <div class="clients-gallery hidden lg:grid">
     {
-      data.inicioClientes.map((cliente, idx) => (
+      data.inicioClientes.map((cliente) => (
         <picture>
-          <Image inferSize={true} src={cliente} alt={`Cliente engeo ${idx}`} loading="lazy"/>
+          <Image inferSize={true} src={cliente.image} alt={`Logo de ${cliente.title}, cliente de ENGEO`} loading="lazy"/>
         </picture>
       ))
     }
@@ -38,13 +38,13 @@ const { data } = homeImages;
     <!-- Carousel wrapper -->
     <div class="relative h-56 overflow-hidden rounded-lg md:h-[490px]">
       {
-        data.inicioClientes.map((image, idx) => (
+        data.inicioClientes.map((cliente) => (
           <div class="hidden duration-500 ease-in-out" data-carousel-item>
             <Image
               inferSize={true}
-              src={image}
+              src={cliente.image}
               class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt={`carusel clientes - imagen ${idx}`}
+              alt={`Logo de ${cliente.title}, cliente de ENGEO`}
               loading="lazy"
             />
           </div>
@@ -117,7 +117,7 @@ const { data } = homeImages;
     border-radius: 5px;
   }
 
-  #clients h1 {
+  #clients h2 {
     color: #091b49;
     letter-spacing: 12px;
     text-shadow: 0px 0px 10px #908f95;
