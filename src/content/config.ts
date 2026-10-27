@@ -7,6 +7,7 @@ const servicios = defineCollection({
         order: z.number(),
         title: z.string(),
         description: z.string().default(''),
+        seoDescription: z.string(),
         header: z.array(z.string()),
         video: z.string().default(''),
         additionalData: z.object({
@@ -30,7 +31,10 @@ const inicio = defineCollection({
     schema: z.object({
         logo: z.string().url(),
         aboutus: z.string().url(),
-        inicioClientes: z.array(z.string().url()),
+        inicioClientes: z.array(z.object({
+            image: z.string().url(),
+            title: z.string(),
+        })),
         inicioHeader: z.array(z.string().url()),
         inicioServiciosSlider: z.array(z.string().url()),
         inicioServiciosSliderDos: z.array(z.string().url()),
